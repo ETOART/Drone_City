@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 333e6e60f3302fa4db6bfa9af1b8db26
+guid: 6375527348b85d14b9ea914f4493a7be
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -12,7 +12,7 @@ TextureImporter:
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 1
-    alphaTestReferenceValue: 0.35
+    alphaTestReferenceValue: 0.45
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
