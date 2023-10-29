@@ -195,6 +195,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2384dbf2c1c420f45a792fbc315fbfb1, type: 2}
     - {fileID: 11400000, guid: 404820c4cf36ad944862fa59c56064f0, type: 2}
     - {fileID: 11400000, guid: 5a9a2dc462c7bde4f86d0615a19c2c72, type: 2}
+    - {fileID: 11400000, guid: 5529ec4c800f09245b2eb9f2e6e2961f, type: 2}
+    - {fileID: 11400000, guid: 8de63308386043d4d9ad14f10034a42d, type: 2}
 --- !u!114 &-2223948172287066284
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1131,7 +1133,7 @@ MonoBehaviour:
   active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 70
+    m_Value: 200
   directionalTransmissionMultiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -1143,10 +1145,10 @@ MonoBehaviour:
     m_Value: 0.028571429
   cascadeShadowSplit1:
     m_OverrideState: 1
-    m_Value: 0.057142857
+    m_Value: 0.54879415
   cascadeShadowSplit2:
     m_OverrideState: 1
-    m_Value: 0.22857143
+    m_Value: 0.80092776
   cascadeShadowBorder0:
     m_OverrideState: 1
     m_Value: 0.25
