@@ -105,8 +105,16 @@ namespace DroneController
         /// </summary>
         public void ThrottleForce(float throttleInput)
         {
-            float forceValue = (throttleInput > 0) ? _droneMovementData.UpwardMovementForce : (throttleInput < 0) ? _droneMovementData.DownwardMovementForce : 0f;
-            _currentUpForce = _rigidbody.mass * 9.81f + throttleInput * forceValue;
+            
+                float forceValue = (throttleInput > 0) ? _droneMovementData.UpwardMovementForce :
+                    (throttleInput < 0) ? _droneMovementData.DownwardMovementForce : 0f;
+                _currentUpForce = _rigidbody.mass * 9.81f + throttleInput * forceValue;
+               // if (transform.position.y < 45)
+               // {
+               //     _currentUpForce = _rigidbody.mass * 9.81f + 0 * forceValue;
+               // }
+
+           
         }
 
         /// <summary>
