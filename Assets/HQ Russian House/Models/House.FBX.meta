@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: f06aaa3b5aee22840992da94a1f69c3d
+timeCreated: 1496942389
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bench011
+    100002: Bench013
+    100004: Bench014
+    100006: Bench015
+    100008: Box006
+    100010: Box008
+    100012: Box009
+    100014: Box010
+    100016: Box012
+    100018: Box015
+    100020: Box016
+    100022: Box017
+    100024: Box018
+    100026: Box019
+    100028: Box020
+    100030: Box021
+    100032: Box022
+    100034: Box023
+    100036: Box024
+    100038: Box025
+    100040: Box026
+    100042: Box027
+    100044: Box028
+    100046: Box029
+    100048: Box030
+    100050: Box032
+    100052: Box034
+    100054: Box035
+    100056: Box036
+    100058: Box037
+    100060: Box038
+    100062: Box039
+    100064: Box040
+    100066: Box041
+    100068: Box042
+    100070: Box043
+    100072: Box044
+    100074: Box045
+    100076: Box046
+    100078: Box047
+    100080: Box048
+    100082: Box049
+    100084: Box050
+    100086: Box054
+    100088: Box055
+    100090: Box056
+    100092: Box057
+    100094: Box058
+    100096: Box059
+    100098: Box060
+    100100: Box061
+    100102: Box062
+    100104: Box063
+    100106: Box064
+    100108: Box065
+    100110: Box069
+    100112: Box070
+    100114: Box072
+    100116: Door
+    100118: Elements 003
+    100120: Elements 005
+    100122: Ends017
+    100124: Floor 002
+    100126: Floor 1
+    100128: //RootNode
+    100130: Logs Wall018
+    100132: Logs Wall024
+    100134: Logs Wall029
+    100136: Object010
+    100138: Object011
+    100140: Object012
+    100142: Object021
+    100144: Object022
+    100146: Object023
+    100148: Object027
+    100150: Object028
+    100152: Object029
+    100154: Object030
+    100156: Object032
+    100158: Object033
+    100160: Object034
+    100162: Object036
+    100164: Object037
+    100166: Object039
+    100168: Object040
+    100170: Object041
+    100172: Object042
+    100174: Object043
+    100176: Object044
+    100178: Object045
+    100180: Object046
+    100182: Object047
+    100184: Object048
+    100186: Object049
+    100188: Object050
+    100190: Plane002
+    100192: Plane003
+    100194: Plane004
+    100196: Plane005
+    100198: Plane006
+    100200: Plane007
+    100202: Plane008
+    100204: Plane009
+    100206: Plane010
+    100208: Plane011
+    100210: Plane012
+    100212: Plane013
+    100214: Plane014
+    100216: Plane015
+    100218: Plane016
+    100220: Plane017
+    100222: Shape001
+    100224: Small Window 2 floor
+    100226: Small Window 2 floor001
+    100228: Stair
+    100230: Stair Collider
+    100232: Door Lowpoly
+    100234: Door Lowpoly001
+    100236: Door Lowpoly002
+    100238: Door Lowpoly003
+    100240: Object054
+    100242: Object055
+    100244: Object056
+    100246: Object057
+    100248: Object058
+    100250: 2 Floor Ceiling
+    100252: Base
+    100254: Benchs
+    100256: Door 1
+    100258: Door 2
+    100260: Door 3
+    100262: Door 4
+    100264: Doorjamb 1 Floor
+    100266: Doorjamb 2 Floor
+    100268: Doorjamb 2 Floor 2
+    100270: Doorjamb 2 Floor Out
+    100272: Doorjamb Main
+    100274: Doors Parent
+    100276: Floor 1 Walls
+    100278: Floor 2
+    100280: Floor 2 Walls
+    100282: House Decorations
+    100284: House Walls Ends
+    100286: Indoor Decorations
+    100288: Roof
+    100290: Roof Decorations
+    100292: Side Wood
+    100294: Stair Outdoor
+    400000: Bench011
+    400002: Bench013
+    400004: Bench014
+    400006: Bench015
+    400008: Box006
+    400010: Box008
+    400012: Box009
+    400014: Box010
+    400016: Box012
+    400018: Box015
+    400020: Box016
+    400022: Box017
+    400024: Box018
+    400026: Box019
+    400028: Box020
+    400030: Box021
+    400032: Box022
+    400034: Box023
+    400036: Box024
+    400038: Box025
+    400040: Box026
+    400042: Box027
+    400044: Box028
+    400046: Box029
+    400048: Box030
+    400050: Box032
+    400052: Box034
+    400054: Box035
+    400056: Box036
+    400058: Box037
+    400060: Box038
+    400062: Box039
+    400064: Box040
+    400066: Box041
+    400068: Box042
+    400070: Box043
+    400072: Box044
+    400074: Box045
+    400076: Box046
+    400078: Box047
+    400080: Box048
+    400082: Box049
+    400084: Box050
+    400086: Box054
+    400088: Box055
+    400090: Box056
+    400092: Box057
+    400094: Box058
+    400096: Box059
+    400098: Box060
+    400100: Box061
+    400102: Box062
+    400104: Box063
+    400106: Box064
+    400108: Box065
+    400110: Box069
+    400112: Box070
+    400114: Box072
+    400116: Door
+    400118: Elements 003
+    400120: Elements 005
+    400122: Ends017
+    400124: Floor 002
+    400126: Floor 1
+    400128: //RootNode
+    400130: Logs Wall018
+    400132: Logs Wall024
+    400134: Logs Wall029
+    400136: Object010
+    400138: Object011
+    400140: Object012
+    400142: Object021
+    400144: Object022
+    400146: Object023
+    400148: Object027
+    400150: Object028
+    400152: Object029
+    400154: Object030
+    400156: Object032
+    400158: Object033
+    400160: Object034
+    400162: Object036
+    400164: Object037
+    400166: Object039
+    400168: Object040
+    400170: Object041
+    400172: Object042
+    400174: Object043
+    400176: Object044
+    400178: Object045
+    400180: Object046
+    400182: Object047
+    400184: Object048
+    400186: Object049
+    400188: Object050
+    400190: Plane002
+    400192: Plane003
+    400194: Plane004
+    400196: Plane005
+    400198: Plane006
+    400200: Plane007
+    400202: Plane008
+    400204: Plane009
+    400206: Plane010
+    400208: Plane011
+    400210: Plane012
+    400212: Plane013
+    400214: Plane014
+    400216: Plane015
+    400218: Plane016
+    400220: Plane017
+    400222: Shape001
+    400224: Small Window 2 floor
+    400226: Small Window 2 floor001
+    400228: Stair
+    400230: Stair Collider
+    400232: Door Lowpoly
+    400234: Door Lowpoly001
+    400236: Door Lowpoly002
+    400238: Door Lowpoly003
+    400240: Object054
+    400242: Object055
+    400244: Object056
+    400246: Object057
+    400248: Object058
+    400250: 2 Floor Ceiling
+    400252: Base
+    400254: Benchs
+    400256: Door 1
+    400258: Door 2
+    400260: Door 3
+    400262: Door 4
+    400264: Doorjamb 1 Floor
+    400266: Doorjamb 2 Floor
+    400268: Doorjamb 2 Floor 2
+    400270: Doorjamb 2 Floor Out
+    400272: Doorjamb Main
+    400274: Doors Parent
+    400276: Floor 1 Walls
+    400278: Floor 2
+    400280: Floor 2 Walls
+    400282: House Decorations
+    400284: House Walls Ends
+    400286: Indoor Decorations
+    400288: Roof
+    400290: Roof Decorations
+    400292: Side Wood
+    400294: Stair Outdoor
+    2300000: Bench011
+    2300002: Bench013
+    2300004: Bench014
+    2300006: Bench015
+    2300008: Box006
+    2300010: Box008
+    2300012: Box009
+    2300014: Box010
+    2300016: Box012
+    2300018: Box015
+    2300020: Box016
+    2300022: Box017
+    2300024: Box018
+    2300026: Box019
+    2300028: Box020
+    2300030: Box021
+    2300032: Box022
+    2300034: Box023
+    2300036: Box024
+    2300038: Box025
+    2300040: Box026
+    2300042: Box027
+    2300044: Box028
+    2300046: Box029
+    2300048: Box030
+    2300050: Box032
+    2300052: Box034
+    2300054: Box035
+    2300056: Box036
+    2300058: Box037
+    2300060: Box038
+    2300062: Box039
+    2300064: Box040
+    2300066: Box041
+    2300068: Box042
+    2300070: Box043
+    2300072: Box044
+    2300074: Box045
+    2300076: Box046
+    2300078: Box047
+    2300080: Box048
+    2300082: Box049
+    2300084: Box050
+    2300086: Box054
+    2300088: Box055
+    2300090: Box056
+    2300092: Box057
+    2300094: Box058
+    2300096: Box059
+    2300098: Box060
+    2300100: Box061
+    2300102: Box062
+    2300104: Box063
+    2300106: Box064
+    2300108: Box065
+    2300110: Box069
+    2300112: Box070
+    2300114: Box072
+    2300116: Door
+    2300118: Elements 003
+    2300120: Elements 005
+    2300122: Ends017
+    2300124: Floor 002
+    2300126: Floor 1
+    2300128: Logs Wall018
+    2300130: Logs Wall024
+    2300132: Logs Wall029
+    2300134: Object010
+    2300136: Object011
+    2300138: Object012
+    2300140: Object021
+    2300142: Object022
+    2300144: Object023
+    2300146: Object027
+    2300148: Object028
+    2300150: Object029
+    2300152: Object030
+    2300154: Object032
+    2300156: Object033
+    2300158: Object034
+    2300160: Object036
+    2300162: Object037
+    2300164: Object039
+    2300166: Object040
+    2300168: Object041
+    2300170: Object042
+    2300172: Object043
+    2300174: Object044
+    2300176: Object045
+    2300178: Object046
+    2300180: Object047
+    2300182: Object048
+    2300184: Object049
+    2300186: Object050
+    2300188: Plane002
+    2300190: Plane003
+    2300192: Plane004
+    2300194: Plane005
+    2300196: Plane006
+    2300198: Plane007
+    2300200: Plane008
+    2300202: Plane009
+    2300204: Plane010
+    2300206: Plane011
+    2300208: Plane012
+    2300210: Plane013
+    2300212: Plane014
+    2300214: Plane015
+    2300216: Plane016
+    2300218: Plane017
+    2300220: Shape001
+    2300222: Small Window 2 floor
+    2300224: Small Window 2 floor001
+    2300226: Stair
+    2300228: Stair Collider
+    2300230: Door Lowpoly
+    2300232: Door Lowpoly001
+    2300234: Door Lowpoly002
+    2300236: Door Lowpoly003
+    2300238: Object054
+    2300240: Object055
+    2300242: Object056
+    2300244: Object057
+    2300246: Object058
+    2300248: 2 Floor Ceiling
+    2300250: Base
+    2300252: Benchs
+    2300254: Door 1
+    2300256: Door 2
+    2300258: Door 3
+    2300260: Door 4
+    2300262: Doorjamb 1 Floor
+    2300264: Doorjamb 2 Floor
+    2300266: Doorjamb 2 Floor 2
+    2300268: Doorjamb 2 Floor Out
+    2300270: Doorjamb Main
+    2300272: Floor 1 Walls
+    2300274: Floor 2
+    2300276: Floor 2 Walls
+    2300278: House Decorations
+    2300280: House Walls Ends
+    2300282: Indoor Decorations
+    2300284: Roof
+    2300286: Roof Decorations
+    2300288: Side Wood
+    2300290: Stair Outdoor
+    3300000: Bench011
+    3300002: Bench013
+    3300004: Bench014
+    3300006: Bench015
+    3300008: Box006
+    3300010: Box008
+    3300012: Box009
+    3300014: Box010
+    3300016: Box012
+    3300018: Box015
+    3300020: Box016
+    3300022: Box017
+    3300024: Box018
+    3300026: Box019
+    3300028: Box020
+    3300030: Box021
+    3300032: Box022
+    3300034: Box023
+    3300036: Box024
+    3300038: Box025
+    3300040: Box026
+    3300042: Box027
+    3300044: Box028
+    3300046: Box029
+    3300048: Box030
+    3300050: Box032
+    3300052: Box034
+    3300054: Box035
+    3300056: Box036
+    3300058: Box037
+    3300060: Box038
+    3300062: Box039
+    3300064: Box040
+    3300066: Box041
+    3300068: Box042
+    3300070: Box043
+    3300072: Box044
+    3300074: Box045
+    3300076: Box046
+    3300078: Box047
+    3300080: Box048
+    3300082: Box049
+    3300084: Box050
+    3300086: Box054
+    3300088: Box055
+    3300090: Box056
+    3300092: Box057
+    3300094: Box058
+    3300096: Box059
+    3300098: Box060
+    3300100: Box061
+    3300102: Box062
+    3300104: Box063
+    3300106: Box064
+    3300108: Box065
+    3300110: Box069
+    3300112: Box070
+    3300114: Box072
+    3300116: Door
+    3300118: Elements 003
+    3300120: Elements 005
+    3300122: Ends017
+    3300124: Floor 002
+    3300126: Floor 1
+    3300128: Logs Wall018
+    3300130: Logs Wall024
+    3300132: Logs Wall029
+    3300134: Object010
+    3300136: Object011
+    3300138: Object012
+    3300140: Object021
+    3300142: Object022
+    3300144: Object023
+    3300146: Object027
+    3300148: Object028
+    3300150: Object029
+    3300152: Object030
+    3300154: Object032
+    3300156: Object033
+    3300158: Object034
+    3300160: Object036
+    3300162: Object037
+    3300164: Object039
+    3300166: Object040
+    3300168: Object041
+    3300170: Object042
+    3300172: Object043
+    3300174: Object044
+    3300176: Object045
+    3300178: Object046
+    3300180: Object047
+    3300182: Object048
+    3300184: Object049
+    3300186: Object050
+    3300188: Plane002
+    3300190: Plane003
+    3300192: Plane004
+    3300194: Plane005
+    3300196: Plane006
+    3300198: Plane007
+    3300200: Plane008
+    3300202: Plane009
+    3300204: Plane010
+    3300206: Plane011
+    3300208: Plane012
+    3300210: Plane013
+    3300212: Plane014
+    3300214: Plane015
+    3300216: Plane016
+    3300218: Plane017
+    3300220: Shape001
+    3300222: Small Window 2 floor
+    3300224: Small Window 2 floor001
+    3300226: Stair
+    3300228: Stair Collider
+    3300230: Door Lowpoly
+    3300232: Door Lowpoly001
+    3300234: Door Lowpoly002
+    3300236: Door Lowpoly003
+    3300238: Object054
+    3300240: Object055
+    3300242: Object056
+    3300244: Object057
+    3300246: Object058
+    3300248: 2 Floor Ceiling
+    3300250: Base
+    3300252: Benchs
+    3300254: Door 1
+    3300256: Door 2
+    3300258: Door 3
+    3300260: Door 4
+    3300262: Doorjamb 1 Floor
+    3300264: Doorjamb 2 Floor
+    3300266: Doorjamb 2 Floor 2
+    3300268: Doorjamb 2 Floor Out
+    3300270: Doorjamb Main
+    3300272: Floor 1 Walls
+    3300274: Floor 2
+    3300276: Floor 2 Walls
+    3300278: House Decorations
+    3300280: House Walls Ends
+    3300282: Indoor Decorations
+    3300284: Roof
+    3300286: Roof Decorations
+    3300288: Side Wood
+    3300290: Stair Outdoor
+    4300000: Floor 1
+    4300002: Ends017
+    4300004: Logs Wall018
+    4300006: Floor 002
+    4300008: Logs Wall024
+    4300010: Object010
+    4300012: Box006
+    4300014: Box008
+    4300016: Box009
+    4300018: Object011
+    4300020: Box010
+    4300022: Plane002
+    4300024: Plane003
+    4300026: Plane004
+    4300028: Plane005
+    4300030: Elements 003
+    4300032: Object012
+    4300034: Plane006
+    4300036: Plane007
+    4300038: Plane008
+    4300040: Small Window 2 floor
+    4300042: Plane009
+    4300044: Box012
+    4300046: Plane010
+    4300048: Box015
+    4300050: Box016
+    4300052: Object021
+    4300054: Plane011
+    4300056: Object022
+    4300058: Plane012
+    4300060: Box017
+    4300062: Box018
+    4300064: Elements 005
+    4300066: Box019
+    4300068: Box020
+    4300070: Box021
+    4300072: Object023
+    4300074: Object027
+    4300076: Object028
+    4300078: Object029
+    4300080: Object030
+    4300082: Box022
+    4300084: Box023
+    4300086: Box024
+    4300088: Box025
+    4300090: Box026
+    4300092: Box027
+    4300094: Small Window 2 floor001
+    4300096: Plane013
+    4300098: Logs Wall029
+    4300100: Plane014
+    4300102: Object032
+    4300104: Box028
+    4300106: Box029
+    4300108: Object033
+    4300110: Object034
+    4300112: Box030
+    4300114: Box032
+    4300116: Plane015
+    4300118: Plane016
+    4300120: Stair
+    4300122: Bench011
+    4300124: Box034
+    4300126: Object036
+    4300128: Box035
+    4300130: Plane017
+    4300132: Object037
+    4300134: Object039
+    4300136: Object040
+    4300138: Box036
+    4300140: Object041
+    4300142: Object042
+    4300144: Object043
+    4300146: Object044
+    4300148: Object045
+    4300150: Object046
+    4300152: Object047
+    4300154: Object048
+    4300156: Box037
+    4300158: Object049
+    4300160: Box038
+    4300162: Shape001
+    4300164: Box039
+    4300166: Box040
+    4300168: Box041
+    4300170: Box042
+    4300172: Box043
+    4300174: Box044
+    4300176: Box045
+    4300178: Box046
+    4300180: Box047
+    4300182: Box048
+    4300184: Box049
+    4300186: Box050
+    4300188: Box054
+    4300190: Box055
+    4300192: Box056
+    4300194: Box057
+    4300196: Box058
+    4300198: Box059
+    4300200: Box060
+    4300202: Box061
+    4300204: Box062
+    4300206: Box063
+    4300208: Box064
+    4300210: Box065
+    4300212: Box069
+    4300214: Box070
+    4300216: Object050
+    4300218: Door
+    4300220: Box072
+    4300222: Bench013
+    4300224: Bench014
+    4300226: Bench015
+    4300228: Stair Collider
+    4300230: Object054
+    4300232: Door Lowpoly
+    4300234: Door Lowpoly001
+    4300236: Object055
+    4300238: Door Lowpoly002
+    4300240: Object056
+    4300242: Door Lowpoly003
+    4300244: Object057
+    4300246: Object058
+    4300248: House Walls Ends
+    4300250: Floor 2 Walls
+    4300252: Floor 2
+    4300254: Floor 1 Walls
+    4300256: House Decorations
+    4300258: Roof
+    4300260: Side Wood
+    4300262: Base
+    4300264: 2 Floor Ceiling
+    4300266: Roof Decorations
+    4300268: Indoor Decorations
+    4300270: Benchs
+    4300272: Doorjamb Main
+    4300274: Doorjamb 2 Floor Out
+    4300276: Door
+    4300278: Doorjamb 2 Floor 2
+    4300280: Door
+    4300282: Doorjamb 2 Floor
+    4300284: Door
+    4300286: Doorjamb 1 Floor
+    4300288: Door
+    4300290: Stair Outdoor
+    6400000: Bench011
+    6400002: Bench013
+    6400004: Bench014
+    6400006: Bench015
+    6400008: Box006
+    6400010: Box008
+    6400012: Box009
+    6400014: Box010
+    6400016: Box012
+    6400018: Box015
+    6400020: Box016
+    6400022: Box017
+    6400024: Box018
+    6400026: Box019
+    6400028: Box020
+    6400030: Box021
+    6400032: Box022
+    6400034: Box023
+    6400036: Box024
+    6400038: Box025
+    6400040: Box026
+    6400042: Box027
+    6400044: Box028
+    6400046: Box029
+    6400048: Box030
+    6400050: Box032
+    6400052: Box034
+    6400054: Box035
+    6400056: Box036
+    6400058: Box037
+    6400060: Box038
+    6400062: Box039
+    6400064: Box040
+    6400066: Box041
+    6400068: Box042
+    6400070: Box043
+    6400072: Box044
+    6400074: Box045
+    6400076: Box046
+    6400078: Box047
+    6400080: Box048
+    6400082: Box049
+    6400084: Box050
+    6400086: Box054
+    6400088: Box055
+    6400090: Box056
+    6400092: Box057
+    6400094: Box058
+    6400096: Box059
+    6400098: Box060
+    6400100: Box061
+    6400102: Box062
+    6400104: Box063
+    6400106: Box064
+    6400108: Box065
+    6400110: Box069
+    6400112: Box070
+    6400114: Box072
+    6400116: Door
+    6400118: Elements 003
+    6400120: Elements 005
+    6400122: Ends017
+    6400124: Floor 002
+    6400126: Floor 1
+    6400128: Logs Wall018
+    6400130: Logs Wall024
+    6400132: Logs Wall029
+    6400134: Object010
+    6400136: Object011
+    6400138: Object012
+    6400140: Object021
+    6400142: Object022
+    6400144: Object023
+    6400146: Object027
+    6400148: Object028
+    6400150: Object029
+    6400152: Object030
+    6400154: Object032
+    6400156: Object033
+    6400158: Object034
+    6400160: Object036
+    6400162: Object037
+    6400164: Object039
+    6400166: Object040
+    6400168: Object041
+    6400170: Object042
+    6400172: Object043
+    6400174: Object044
+    6400176: Object045
+    6400178: Object046
+    6400180: Object047
+    6400182: Object048
+    6400184: Object049
+    6400186: Object050
+    6400188: Plane002
+    6400190: Plane003
+    6400192: Plane004
+    6400194: Plane005
+    6400196: Plane006
+    6400198: Plane007
+    6400200: Plane008
+    6400202: Plane009
+    6400204: Plane010
+    6400206: Plane011
+    6400208: Plane012
+    6400210: Plane013
+    6400212: Plane014
+    6400214: Plane015
+    6400216: Plane016
+    6400218: Plane017
+    6400220: Shape001
+    6400222: Small Window 2 floor
+    6400224: Small Window 2 floor001
+    6400226: Stair
+    6400228: Stair Collider
+    6400230: Door Lowpoly
+    6400232: Door Lowpoly001
+    6400234: Door Lowpoly002
+    6400236: Door Lowpoly003
+    6400238: Object054
+    6400240: Object055
+    6400242: Object056
+    6400244: Object057
+    6400246: Object058
+    6400248: 2 Floor Ceiling
+    6400250: Base
+    6400252: Benchs
+    6400254: Door 1
+    6400256: Door 2
+    6400258: Door 3
+    6400260: Door 4
+    6400262: Doorjamb 1 Floor
+    6400264: Doorjamb 2 Floor
+    6400266: Doorjamb 2 Floor 2
+    6400268: Doorjamb 2 Floor Out
+    6400270: Doorjamb Main
+    6400272: Floor 1 Walls
+    6400274: Floor 2
+    6400276: Floor 2 Walls
+    6400278: House Decorations
+    6400280: House Walls Ends
+    6400282: Indoor Decorations
+    6400284: Roof
+    6400286: Roof Decorations
+    6400288: Side Wood
+    6400290: Stair Outdoor
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
