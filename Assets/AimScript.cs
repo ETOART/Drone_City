@@ -9,6 +9,8 @@ public class AimScript : MonoBehaviour
     [SerializeField] private Camera _camera;
     [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private GameObject HitSphere;
+
+    [SerializeField] private GameObject scanArea;
     
     
     // Start is called before the first frame update
@@ -17,12 +19,20 @@ public class AimScript : MonoBehaviour
         
     }
 
+    [SerializeField] private List<Camera>  _cameras;
+    
+    
     private void OnDrawGizmos()
     {
+
+        Ray ray;
+        ray =_camera.ScreenPointToRay(Input.mousePosition);
+       // Debug.Log(Input.mousePosition);
         
-        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+        //ray =  _camera.ViewportPointToRay(scanArea.transform.position);
         
-            
+
+
         int layerMask = 1 << 10;
         RaycastHit hit;
             
