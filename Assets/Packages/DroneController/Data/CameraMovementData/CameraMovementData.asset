@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63e1aa03d0ccee4793a7b78fdc4ffbf, type: 3}
   m_Name: CameraMovementData
   m_EditorClassIdentifier: 
-  Offset: {x: 0, y: 2, z: -4}
+  Offset: {x: 0, y: 3.23, z: -6.64}
   FollowSpeed: 0.1
   YFollowStrength: 50

@@ -16,7 +16,7 @@ TagManager:
   - 
   - PostProcessing
   - Not in Reflection
-  - 
+  - GameObjects
   - 
   - 
   - 
@@ -41,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Top
+    uniqueID: 3122888555
     locked: 0
