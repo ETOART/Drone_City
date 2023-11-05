@@ -26,30 +26,35 @@ public class AimScript : MonoBehaviour
     {
 
         Ray ray;
-        ray =_camera.ScreenPointToRay(Input.mousePosition);
+        //ray =_camera.ScreenPointToRay(Input.mousePosition);
        // Debug.Log(Input.mousePosition);
         
-        //ray =  _camera.ViewportPointToRay(scanArea.transform.position);
+       /// ray =  _camera.ViewportPointToRay(scanArea.transform.position);
         
 
-
-        int layerMask = 1 << 10;
-        RaycastHit hit;
+        
+       int layerMask = 1 << 10;
+       RaycastHit hit;
+       //ray, out hit, 1000000,layerMask
+       if (Physics.Linecast(_camera.gameObject.transform.position,scanArea.transform.position,out hit,layerMask))
+       {
+           Debug.DrawLine (_camera.gameObject.transform.position, scanArea.transform.position, Color.white);
             
-        if (Physics.Raycast(ray, out hit, 1000000,layerMask))
-        {
-            Debug.DrawRay (ray.origin, ray.direction * 50000000, Color.white);
-            //Gizmos.DrawSphere(hit.point, 10);
-            Vector3 pos = hit.point;
+           //Gizmos.DrawSphere(hit.point, 10);
+           Vector3 pos = hit.point;
            
-            HitSphere.transform.position = pos;
-        }
+           HitSphere.transform.position = pos;
+       }
                
-        else
-        {
-            Debug.DrawRay (ray.origin, ray.direction * 50000000, Color.red);
-           // HitSphere.transform.position = Vector3.zero;
-        }
+       else
+       {
+           
+           Debug.DrawLine (_camera.gameObject.transform.position, scanArea.transform.position,  Color.red);
+           //Vector3 pos = hit.point;
+           //HitSphere.transform.position = pos;
+       }
+
+       
         
     }
 
