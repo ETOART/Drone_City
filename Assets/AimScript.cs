@@ -22,6 +22,7 @@ public class AimScript : MonoBehaviour
     [SerializeField] private List<Camera>  _cameras;
     
     
+    /*
     private void OnDrawGizmos()
     {
 
@@ -58,12 +59,33 @@ public class AimScript : MonoBehaviour
        
         
     }
+    */
 
     // Update is called once per frame
     void Update()
     {
         
-
+        int layerMask = 1 << 10;
+        RaycastHit hit;
+        //ray, out hit, 1000000,layerMask
+        if (Physics.Linecast(_camera.gameObject.transform.position,scanArea.transform.position,out hit,layerMask))
+        {
+          //  Debug.DrawLine (_camera.gameObject.transform.position, scanArea.transform.position, Color.white);
+            
+            //Gizmos.DrawSphere(hit.point, 10);
+            Vector3 pos = hit.point;
+           
+            HitSphere.transform.position = pos;
+        }
+       
+               
+        else
+        {
+           
+           // Debug.DrawLine (_camera.gameObject.transform.position, scanArea.transform.position,  Color.red);
+            //Vector3 pos = hit.point;
+            //HitSphere.transform.position = pos;
+        }
             
             
            // Debug.DrawRay (ray.origin, ray.direction * 50000000, Color.red);
