@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SampleSceneAssets/Scenes/SampleScene.unity
-    guid: 3db1837cc97a95e4c98610966fac2b0b
+    path: Assets/Scenes/GameScenes/S_01_VideoScreen.unity
+    guid: da42cc380d5d7cf418551cd59f8c3ebf
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/S_02_DroneSelect.unity
+    guid: 28627072fe4a67d44afd7dbec5a12a03
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/S_03_Villlage.unity
+    guid: 53149f4560aa38b4fb1c92b34ced5b3a
   m_configObjects: {}
