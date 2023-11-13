@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.Serialization;
 
 public class AimObject : MonoBehaviour
 {
@@ -15,7 +17,10 @@ public class AimObject : MonoBehaviour
     [SerializeField] private GameObject crossObject;
     [SerializeField] private bool block;
     [SerializeField] private GameObject _player;
-    
+
+    [SerializeField] private AudioSource _scanSound;
+
+  
     
     // Start is called before the first frame update
     void Start()
@@ -36,12 +41,15 @@ public class AimObject : MonoBehaviour
                 block = true;
                GameObject cross =  Instantiate(crossObject, scanObject.transform);
               // cross.GetComponent<LookAtConstraint>().AddSource(_pl);
-               
+
+              _scanSound.Play();
+              GameManager.instance.AddScore();
                
                LeanTween.moveY(cross, cross.transform.position.y + 25, 3).setEaseOutCirc().setOnComplete((o =>
                {
                     //Destroy(cross);
                     block = false;
+                    
                }));
             }
         }
