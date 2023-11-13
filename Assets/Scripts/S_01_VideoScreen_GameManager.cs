@@ -17,7 +17,10 @@ public class S_01_VideoScreen_GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartGame();
+        }
     }
 
     public void StartGame()

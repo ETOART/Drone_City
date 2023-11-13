@@ -1,0 +1,827 @@
+fileFormatVersion: 2
+guid: 7f86453235f3a27458e9c1b8e8c55cae
+timeCreated: 1496515969
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cage
+    100002: Circle001
+    100004: //RootNode
+    100006: Highpoly
+    100008: Lowpoly
+    100010: Petal 005
+    100012: Petal 006
+    100014: Petal 007
+    100016: Petal 008
+    100018: Petal 009
+    100020: Petal 010
+    100022: Petal 011
+    100024: Petal 012
+    100026: Petal 013
+    100028: Petal 014
+    100030: Petal 015
+    100032: Petal 016
+    100034: Petal 017
+    100036: Petal 018
+    100038: Petal 019
+    100040: Petal 020
+    100042: Petal 021
+    100044: Petal 022
+    100046: Petal 023
+    100048: Petal 024
+    100050: Petal 025
+    100052: Petal 026
+    100054: Petal 027
+    100056: Petal 028
+    100058: Petal 029
+    100060: Petal 030
+    100062: Petal 031
+    100064: Petal 032
+    100066: Petal 033
+    100068: Petal 034
+    100070: Petal 035
+    100072: Petal 036
+    100074: Petal 037
+    100076: Petal 038
+    100078: Petal 039
+    100080: Petal 040
+    100082: Petal 041
+    100084: Petal 042
+    100086: Petal 043
+    100088: Petal 044
+    100090: Petal 045
+    100092: Petal 046
+    100094: Petal 047
+    100096: Petal 048
+    100098: Petal 049
+    100100: Petal 050
+    100102: Petal 051
+    100104: Petal 052
+    100106: Petal 053
+    100108: Petal 054
+    100110: Petal 055
+    100112: Petal 056
+    100114: Petal 057
+    100116: Petal 058
+    100118: Petal 059
+    100120: Petal 060
+    100122: Petal 1
+    100124: Petal 2
+    100126: Petal 3
+    100128: Petal 4
+    100130: Petal 061
+    100132: Petal 062
+    100134: Petal 063
+    100136: Petal 064
+    100138: Petal 065
+    100140: Petal 066
+    100142: Petal 067
+    100144: Petal 068
+    100146: Petal 069
+    100148: Petal 070
+    100150: Petal 071
+    100152: Petal 072
+    100154: Petal 073
+    100156: Petal 074
+    100158: Petal 075
+    100160: Petal 076
+    100162: Petal 077
+    100164: Petal 078
+    100166: Petal 079
+    100168: Petal 080
+    100170: Petal 081
+    100172: Petal 082
+    100174: Petal 083
+    100176: Petal 084
+    100178: Petal 085
+    100180: Petal 086
+    100182: Petal 087
+    100184: Petal 088
+    100186: Petal 089
+    100188: Petal 090
+    100190: Petal 091
+    100192: Petal 092
+    100194: Petal 093
+    100196: Petal 094
+    100198: Petal 095
+    100200: Petal 096
+    100202: Petal 097
+    100204: Petal 098
+    100206: Petal 099
+    100208: Petal 100
+    100210: Petal 101
+    100212: Petal 102
+    100214: Petal 103
+    100216: Petal 105
+    100218: Petal 106
+    100220: Petal 107
+    100222: Petal 108
+    100224: Petal 109
+    100226: Petal 110
+    100228: Petal 111
+    100230: Petal 112
+    100232: Petal 113
+    100234: Petal 114
+    100236: Petal 115
+    100238: Petal 116
+    100240: Petal 117
+    100242: Petal 118
+    100244: Petal 119
+    100246: Petal 120
+    100248: Petal 121
+    100250: Petal 122
+    100252: Petal 123
+    100254: Petal 124
+    100256: Petal 125
+    100258: Petal 126
+    100260: Petal 127
+    100262: Petal 128
+    100264: Petal 129
+    100266: Petal 130
+    100268: Petal 131
+    100270: Petal 132
+    100272: Petal 133
+    100274: Petal 134
+    100276: Petal 135
+    100278: Petal 136
+    100280: Petal 137
+    100282: Petal 138
+    100284: Petal 139
+    100286: Petal 140
+    100288: Petal 141
+    100290: Petal 142
+    100292: Petal 143
+    100294: Petal 144
+    100296: Petal 145
+    100298: Petal 146
+    100300: Petal 147
+    400000: Cage
+    400002: Circle001
+    400004: //RootNode
+    400006: Highpoly
+    400008: Lowpoly
+    400010: Petal 005
+    400012: Petal 006
+    400014: Petal 007
+    400016: Petal 008
+    400018: Petal 009
+    400020: Petal 010
+    400022: Petal 011
+    400024: Petal 012
+    400026: Petal 013
+    400028: Petal 014
+    400030: Petal 015
+    400032: Petal 016
+    400034: Petal 017
+    400036: Petal 018
+    400038: Petal 019
+    400040: Petal 020
+    400042: Petal 021
+    400044: Petal 022
+    400046: Petal 023
+    400048: Petal 024
+    400050: Petal 025
+    400052: Petal 026
+    400054: Petal 027
+    400056: Petal 028
+    400058: Petal 029
+    400060: Petal 030
+    400062: Petal 031
+    400064: Petal 032
+    400066: Petal 033
+    400068: Petal 034
+    400070: Petal 035
+    400072: Petal 036
+    400074: Petal 037
+    400076: Petal 038
+    400078: Petal 039
+    400080: Petal 040
+    400082: Petal 041
+    400084: Petal 042
+    400086: Petal 043
+    400088: Petal 044
+    400090: Petal 045
+    400092: Petal 046
+    400094: Petal 047
+    400096: Petal 048
+    400098: Petal 049
+    400100: Petal 050
+    400102: Petal 051
+    400104: Petal 052
+    400106: Petal 053
+    400108: Petal 054
+    400110: Petal 055
+    400112: Petal 056
+    400114: Petal 057
+    400116: Petal 058
+    400118: Petal 059
+    400120: Petal 060
+    400122: Petal 1
+    400124: Petal 2
+    400126: Petal 3
+    400128: Petal 4
+    400130: Petal 061
+    400132: Petal 062
+    400134: Petal 063
+    400136: Petal 064
+    400138: Petal 065
+    400140: Petal 066
+    400142: Petal 067
+    400144: Petal 068
+    400146: Petal 069
+    400148: Petal 070
+    400150: Petal 071
+    400152: Petal 072
+    400154: Petal 073
+    400156: Petal 074
+    400158: Petal 075
+    400160: Petal 076
+    400162: Petal 077
+    400164: Petal 078
+    400166: Petal 079
+    400168: Petal 080
+    400170: Petal 081
+    400172: Petal 082
+    400174: Petal 083
+    400176: Petal 084
+    400178: Petal 085
+    400180: Petal 086
+    400182: Petal 087
+    400184: Petal 088
+    400186: Petal 089
+    400188: Petal 090
+    400190: Petal 091
+    400192: Petal 092
+    400194: Petal 093
+    400196: Petal 094
+    400198: Petal 095
+    400200: Petal 096
+    400202: Petal 097
+    400204: Petal 098
+    400206: Petal 099
+    400208: Petal 100
+    400210: Petal 101
+    400212: Petal 102
+    400214: Petal 103
+    400216: Petal 105
+    400218: Petal 106
+    400220: Petal 107
+    400222: Petal 108
+    400224: Petal 109
+    400226: Petal 110
+    400228: Petal 111
+    400230: Petal 112
+    400232: Petal 113
+    400234: Petal 114
+    400236: Petal 115
+    400238: Petal 116
+    400240: Petal 117
+    400242: Petal 118
+    400244: Petal 119
+    400246: Petal 120
+    400248: Petal 121
+    400250: Petal 122
+    400252: Petal 123
+    400254: Petal 124
+    400256: Petal 125
+    400258: Petal 126
+    400260: Petal 127
+    400262: Petal 128
+    400264: Petal 129
+    400266: Petal 130
+    400268: Petal 131
+    400270: Petal 132
+    400272: Petal 133
+    400274: Petal 134
+    400276: Petal 135
+    400278: Petal 136
+    400280: Petal 137
+    400282: Petal 138
+    400284: Petal 139
+    400286: Petal 140
+    400288: Petal 141
+    400290: Petal 142
+    400292: Petal 143
+    400294: Petal 144
+    400296: Petal 145
+    400298: Petal 146
+    400300: Petal 147
+    2300000: Cage
+    2300002: Highpoly
+    2300004: Lowpoly
+    2300006: Petal 005
+    2300008: Petal 006
+    2300010: Petal 007
+    2300012: Petal 008
+    2300014: Petal 009
+    2300016: Petal 010
+    2300018: Petal 011
+    2300020: Petal 012
+    2300022: Petal 013
+    2300024: Petal 014
+    2300026: Petal 015
+    2300028: Petal 016
+    2300030: Petal 017
+    2300032: Petal 018
+    2300034: Petal 019
+    2300036: Petal 020
+    2300038: Petal 021
+    2300040: Petal 022
+    2300042: Petal 023
+    2300044: Petal 024
+    2300046: Petal 025
+    2300048: Petal 026
+    2300050: Petal 027
+    2300052: Petal 028
+    2300054: Petal 029
+    2300056: Petal 030
+    2300058: Petal 031
+    2300060: Petal 032
+    2300062: Petal 033
+    2300064: Petal 034
+    2300066: Petal 035
+    2300068: Petal 036
+    2300070: Petal 037
+    2300072: Petal 038
+    2300074: Petal 039
+    2300076: Petal 040
+    2300078: Petal 041
+    2300080: Petal 042
+    2300082: Petal 043
+    2300084: Petal 044
+    2300086: Petal 045
+    2300088: Petal 046
+    2300090: Petal 047
+    2300092: Petal 048
+    2300094: Petal 049
+    2300096: Petal 050
+    2300098: Petal 051
+    2300100: Petal 052
+    2300102: Petal 053
+    2300104: Petal 054
+    2300106: Petal 055
+    2300108: Petal 056
+    2300110: Petal 057
+    2300112: Petal 058
+    2300114: Petal 059
+    2300116: Petal 060
+    2300118: Petal 1
+    2300120: Petal 2
+    2300122: Petal 3
+    2300124: Petal 4
+    2300126: Petal 061
+    2300128: Petal 062
+    2300130: Petal 063
+    2300132: Petal 064
+    2300134: Petal 065
+    2300136: Petal 066
+    2300138: Petal 067
+    2300140: Petal 068
+    2300142: Petal 069
+    2300144: Petal 070
+    2300146: Petal 071
+    2300148: Petal 072
+    2300150: Petal 073
+    2300152: Petal 074
+    2300154: Petal 075
+    2300156: Petal 076
+    2300158: Petal 077
+    2300160: Petal 078
+    2300162: Petal 079
+    2300164: Petal 080
+    2300166: Petal 081
+    2300168: Petal 082
+    2300170: Petal 083
+    2300172: Petal 084
+    2300174: Petal 085
+    2300176: Petal 086
+    2300178: Petal 087
+    2300180: Petal 088
+    2300182: Petal 089
+    2300184: Petal 090
+    2300186: Petal 091
+    2300188: Petal 092
+    2300190: Petal 093
+    2300192: Petal 094
+    2300194: Petal 095
+    2300196: Petal 096
+    2300198: Petal 097
+    2300200: Petal 098
+    2300202: Petal 099
+    2300204: Petal 100
+    2300206: Petal 101
+    2300208: Petal 102
+    2300210: Petal 103
+    2300212: Petal 105
+    2300214: Petal 106
+    2300216: Petal 107
+    2300218: Petal 108
+    2300220: Petal 109
+    2300222: Petal 110
+    2300224: Petal 111
+    2300226: Petal 112
+    2300228: Petal 113
+    2300230: Petal 114
+    2300232: Petal 115
+    2300234: Petal 116
+    2300236: Petal 117
+    2300238: Petal 118
+    2300240: Petal 119
+    2300242: Petal 120
+    2300244: Petal 121
+    2300246: Petal 122
+    2300248: Petal 123
+    2300250: Petal 124
+    2300252: Petal 125
+    2300254: Petal 126
+    2300256: Petal 127
+    2300258: Petal 128
+    2300260: Petal 129
+    2300262: Petal 130
+    2300264: Petal 131
+    2300266: Petal 132
+    2300268: Petal 133
+    2300270: Petal 134
+    2300272: Petal 135
+    2300274: Petal 136
+    2300276: Petal 137
+    2300278: Petal 138
+    2300280: Petal 139
+    2300282: Petal 140
+    2300284: Petal 141
+    2300286: Petal 142
+    2300288: Petal 143
+    2300290: Petal 144
+    2300292: Petal 145
+    2300294: Petal 146
+    2300296: Petal 147
+    3300000: Cage
+    3300002: Highpoly
+    3300004: Lowpoly
+    3300006: Petal 005
+    3300008: Petal 006
+    3300010: Petal 007
+    3300012: Petal 008
+    3300014: Petal 009
+    3300016: Petal 010
+    3300018: Petal 011
+    3300020: Petal 012
+    3300022: Petal 013
+    3300024: Petal 014
+    3300026: Petal 015
+    3300028: Petal 016
+    3300030: Petal 017
+    3300032: Petal 018
+    3300034: Petal 019
+    3300036: Petal 020
+    3300038: Petal 021
+    3300040: Petal 022
+    3300042: Petal 023
+    3300044: Petal 024
+    3300046: Petal 025
+    3300048: Petal 026
+    3300050: Petal 027
+    3300052: Petal 028
+    3300054: Petal 029
+    3300056: Petal 030
+    3300058: Petal 031
+    3300060: Petal 032
+    3300062: Petal 033
+    3300064: Petal 034
+    3300066: Petal 035
+    3300068: Petal 036
+    3300070: Petal 037
+    3300072: Petal 038
+    3300074: Petal 039
+    3300076: Petal 040
+    3300078: Petal 041
+    3300080: Petal 042
+    3300082: Petal 043
+    3300084: Petal 044
+    3300086: Petal 045
+    3300088: Petal 046
+    3300090: Petal 047
+    3300092: Petal 048
+    3300094: Petal 049
+    3300096: Petal 050
+    3300098: Petal 051
+    3300100: Petal 052
+    3300102: Petal 053
+    3300104: Petal 054
+    3300106: Petal 055
+    3300108: Petal 056
+    3300110: Petal 057
+    3300112: Petal 058
+    3300114: Petal 059
+    3300116: Petal 060
+    3300118: Petal 1
+    3300120: Petal 2
+    3300122: Petal 3
+    3300124: Petal 4
+    3300126: Petal 061
+    3300128: Petal 062
+    3300130: Petal 063
+    3300132: Petal 064
+    3300134: Petal 065
+    3300136: Petal 066
+    3300138: Petal 067
+    3300140: Petal 068
+    3300142: Petal 069
+    3300144: Petal 070
+    3300146: Petal 071
+    3300148: Petal 072
+    3300150: Petal 073
+    3300152: Petal 074
+    3300154: Petal 075
+    3300156: Petal 076
+    3300158: Petal 077
+    3300160: Petal 078
+    3300162: Petal 079
+    3300164: Petal 080
+    3300166: Petal 081
+    3300168: Petal 082
+    3300170: Petal 083
+    3300172: Petal 084
+    3300174: Petal 085
+    3300176: Petal 086
+    3300178: Petal 087
+    3300180: Petal 088
+    3300182: Petal 089
+    3300184: Petal 090
+    3300186: Petal 091
+    3300188: Petal 092
+    3300190: Petal 093
+    3300192: Petal 094
+    3300194: Petal 095
+    3300196: Petal 096
+    3300198: Petal 097
+    3300200: Petal 098
+    3300202: Petal 099
+    3300204: Petal 100
+    3300206: Petal 101
+    3300208: Petal 102
+    3300210: Petal 103
+    3300212: Petal 105
+    3300214: Petal 106
+    3300216: Petal 107
+    3300218: Petal 108
+    3300220: Petal 109
+    3300222: Petal 110
+    3300224: Petal 111
+    3300226: Petal 112
+    3300228: Petal 113
+    3300230: Petal 114
+    3300232: Petal 115
+    3300234: Petal 116
+    3300236: Petal 117
+    3300238: Petal 118
+    3300240: Petal 119
+    3300242: Petal 120
+    3300244: Petal 121
+    3300246: Petal 122
+    3300248: Petal 123
+    3300250: Petal 124
+    3300252: Petal 125
+    3300254: Petal 126
+    3300256: Petal 127
+    3300258: Petal 128
+    3300260: Petal 129
+    3300262: Petal 130
+    3300264: Petal 131
+    3300266: Petal 132
+    3300268: Petal 133
+    3300270: Petal 134
+    3300272: Petal 135
+    3300274: Petal 136
+    3300276: Petal 137
+    3300278: Petal 138
+    3300280: Petal 139
+    3300282: Petal 140
+    3300284: Petal 141
+    3300286: Petal 142
+    3300288: Petal 143
+    3300290: Petal 144
+    3300292: Petal 145
+    3300294: Petal 146
+    3300296: Petal 147
+    4300000: Lowpoly
+    4300002: Highpoly
+    4300004: Cage
+    4300006: Petal 1
+    4300008: Petal 3
+    4300010: Petal 2
+    4300012: Petal 4
+    4300014: Petal 005
+    4300016: Petal 006
+    4300018: Petal 007
+    4300020: Petal 008
+    4300022: Petal 009
+    4300024: Petal 010
+    4300026: Petal 011
+    4300028: Petal 012
+    4300030: Petal 013
+    4300032: Petal 014
+    4300034: Petal 015
+    4300036: Petal 016
+    4300038: Petal 017
+    4300040: Petal 018
+    4300042: Petal 019
+    4300044: Petal 020
+    4300046: Petal 021
+    4300048: Petal 022
+    4300050: Petal 023
+    4300052: Petal 024
+    4300054: Petal 025
+    4300056: Petal 026
+    4300058: Petal 027
+    4300060: Petal 028
+    4300062: Petal 029
+    4300064: Petal 030
+    4300066: Petal 031
+    4300068: Petal 032
+    4300070: Petal 033
+    4300072: Petal 034
+    4300074: Petal 035
+    4300076: Petal 036
+    4300078: Petal 037
+    4300080: Petal 038
+    4300082: Petal 039
+    4300084: Petal 040
+    4300086: Petal 041
+    4300088: Petal 042
+    4300090: Petal 043
+    4300092: Petal 044
+    4300094: Petal 045
+    4300096: Petal 046
+    4300098: Petal 047
+    4300100: Petal 048
+    4300102: Petal 049
+    4300104: Petal 050
+    4300106: Petal 051
+    4300108: Petal 052
+    4300110: Petal 053
+    4300112: Petal 054
+    4300114: Petal 055
+    4300116: Petal 056
+    4300118: Petal 057
+    4300120: Petal 058
+    4300122: Petal 059
+    4300124: Petal 060
+    4300126: Petal 061
+    4300128: Petal 062
+    4300130: Petal 063
+    4300132: Petal 064
+    4300134: Petal 065
+    4300136: Petal 066
+    4300138: Petal 067
+    4300140: Petal 068
+    4300142: Petal 069
+    4300144: Petal 070
+    4300146: Petal 071
+    4300148: Petal 072
+    4300150: Petal 073
+    4300152: Petal 074
+    4300154: Petal 075
+    4300156: Petal 076
+    4300158: Petal 077
+    4300160: Petal 078
+    4300162: Petal 079
+    4300164: Petal 080
+    4300166: Petal 081
+    4300168: Petal 082
+    4300170: Petal 083
+    4300172: Petal 084
+    4300174: Petal 085
+    4300176: Petal 086
+    4300178: Petal 087
+    4300180: Petal 088
+    4300182: Petal 089
+    4300184: Petal 090
+    4300186: Petal 091
+    4300188: Petal 092
+    4300190: Petal 093
+    4300192: Petal 094
+    4300194: Petal 095
+    4300196: Petal 096
+    4300198: Petal 097
+    4300200: Petal 098
+    4300202: Petal 099
+    4300204: Petal 100
+    4300206: Petal 101
+    4300208: Petal 102
+    4300210: Petal 103
+    4300212: Petal 105
+    4300214: Petal 106
+    4300216: Petal 107
+    4300218: Petal 108
+    4300220: Petal 109
+    4300222: Petal 110
+    4300224: Petal 111
+    4300226: Petal 112
+    4300228: Petal 113
+    4300230: Petal 114
+    4300232: Petal 115
+    4300234: Petal 116
+    4300236: Petal 117
+    4300238: Petal 118
+    4300240: Petal 119
+    4300242: Petal 120
+    4300244: Petal 121
+    4300246: Petal 122
+    4300248: Petal 123
+    4300250: Petal 124
+    4300252: Petal 125
+    4300254: Petal 126
+    4300256: Petal 127
+    4300258: Petal 128
+    4300260: Petal 129
+    4300262: Petal 130
+    4300264: Petal 131
+    4300266: Petal 132
+    4300268: Petal 133
+    4300270: Petal 134
+    4300272: Petal 135
+    4300274: Petal 136
+    4300276: Petal 137
+    4300278: Petal 138
+    4300280: Petal 139
+    4300282: Petal 140
+    4300284: Petal 141
+    4300286: Petal 142
+    4300288: Petal 143
+    4300290: Petal 144
+    4300292: Petal 145
+    4300294: Petal 146
+    4300296: Petal 147
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
