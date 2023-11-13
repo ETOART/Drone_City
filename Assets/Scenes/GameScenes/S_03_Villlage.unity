@@ -4748,7 +4748,7 @@ MonoBehaviour:
   timeRemaining: 180
   timerIsRunning: 0
   timeText: {fileID: 1717530742}
-  _scoreUI: {fileID: 0}
+  _scoreUI: {fileID: 1501735801}
   score: 0
 --- !u!4 &1865024104
 Transform:
