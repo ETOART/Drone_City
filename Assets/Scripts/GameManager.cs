@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public static GameManager instance;
+
+    [SerializeField] private Image loadingImage;
+    [SerializeField] private float loadingProgress;
+    
     
     
     private void Start()
@@ -39,6 +44,7 @@ public class GameManager : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+                DisplayProgress();
             }
             else
             {
@@ -55,13 +61,18 @@ public class GameManager : MonoBehaviour
         timeToDisplay += 1;
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        timeText.text = "TIME: " + string.Format("{0:00}:{1:00}", minutes, seconds);
+        timeText.text = "" + string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void DisplayProgress()
+    {
+        loadingImage.fillAmount -= 1.0f / 180 * Time.deltaTime;
     }
 
     public void AddScore()
     {
         score += 1;
-        _scoreUI.text = "SCORE  : " + score;
+        _scoreUI.text = "" + score;
         
     }
 
