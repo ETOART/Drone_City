@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 72.90238, g: 75.481316, b: 72.45434, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441482e8936e35048a1dffac814e3ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Profile: {fileID: 0}
+  m_Profile: {fileID: 11400000, guid: d87f7d7815073e840834a16a518c1237, type: 2}
   m_StaticLightingSkyUniqueID: 0
   m_StaticLightingCloudsUniqueID: 0
   m_StaticLightingVolumetricClouds: 0
@@ -1543,10 +1543,6 @@ PrefabInstance:
     - target: {fileID: 5541407955034017022, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
       propertyPath: m_Name
       value: Building
-      objectReference: {fileID: 0}
-    - target: {fileID: 5541407955034017022, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6628460512992815469, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
       propertyPath: m_LocalPosition.x
