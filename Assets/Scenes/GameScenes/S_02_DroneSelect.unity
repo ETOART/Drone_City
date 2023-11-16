@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 1060.9943, g: 1097.4562, b: 1275.1515, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -803,6 +803,18 @@ PrefabInstance:
     - target: {fileID: 1835165448990898591, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
       propertyPath: m_Name
       value: BigCameraSetup
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908774664807987553, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908774664807987553, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908774664807987553, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.206
       objectReference: {fileID: 0}
     - target: {fileID: 8951109124097162456, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
       propertyPath: m_LocalPosition.x

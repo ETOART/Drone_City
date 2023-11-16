@@ -27,6 +27,8 @@ public class AimObject : MonoBehaviour
     {
         
     }
+    
+    
 
     // Update is called once per frame
     void Update()
@@ -38,12 +40,14 @@ public class AimObject : MonoBehaviour
             {
                
                 scanObject.tag = "done";
+                
                 block = true;
                GameObject cross =  Instantiate(crossObject, scanObject.transform);
               // cross.GetComponent<LookAtConstraint>().AddSource(_pl);
 
               _scanSound.Play();
               GameManager.instance.AddScore();
+              GameManager.instance.ShowScanTargetData(scanObject);
                
                LeanTween.moveY(cross, cross.transform.position.y + 25, 3).setEaseOutCirc().setOnComplete((o =>
                {

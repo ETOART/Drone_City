@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
-namespace DroneController
-{
+
     public class InputManager : MonoBehaviour
     {
         public static InputManager Instance;
@@ -11,13 +12,22 @@ namespace DroneController
         [SerializeField] private InputActionReference _inputPitch = default;
         [SerializeField] private InputActionReference _inputRoll = default;
         [SerializeField] private InputActionReference _inputYaw = default;
+        
+        
         [SerializeField] private InputActionReference _inputThrottle = default;
+        [SerializeField] private InputActionReference _inputScanAimUPDOWN = default;
+        [SerializeField] private InputActionReference _inputScanAimLEFTRIGHT = default;
 
         [SerializeField] private float _pitchInput = default;
         [SerializeField] private float _rollInput = default;
         [SerializeField] private float _yawInput = default;
         [SerializeField] private float _throttleInput = default;
 
+
+        [SerializeField] private RotateScanArea aimObject;
+        
+        
+        
         public float PitchInput { get { return _pitchInput; } }
         public float RollInput { get { return _rollInput; } }
         public float YawInput { get { return _yawInput; } }
@@ -35,8 +45,15 @@ namespace DroneController
             }
         }
 
+        public void Update()
+        {
+            aimObject.moveScanAreaLEFTRIGHT(_inputScanAimUPDOWN.action.ReadValue<float>());
+            aimObject.moveScanAreaUPDOWN(_inputScanAimLEFTRIGHT.action.ReadValue<float>());
+        }
+
         private void OnEnable()
         {
+            
             _inputActionAsset.Enable();
 
             _inputPitch.action.canceled += OnPitchInputChanged;
@@ -54,9 +71,20 @@ namespace DroneController
             _inputThrottle.action.canceled += OnThrottleInputChanged;
             _inputThrottle.action.performed += OnThrottleInputChanged;
             _inputThrottle.action.started += OnThrottleInputChanged;
+            
+           // _inputScanAim.action.canceled += OnScanAimInputChanged;
+           // _inputScanAim.action.performed += OnScanAimInputChanged;
+           // _inputScanAim.action.started += OnScanAimInputChanged;
+            
+            
+            
         }
+        
+        
+        
+        
 
-        private void OnDisable()
+        public void OnDisable()
         {
             _inputPitch.action.canceled -= OnPitchInputChanged;
             _inputPitch.action.performed -= OnPitchInputChanged;
@@ -106,5 +134,12 @@ namespace DroneController
         {
             SetInputValue(ref _throttleInput, eventData.ReadValue<float>());
         }
+        
+        private void OnScanAimInputChanged(InputAction.CallbackContext eventData)
+        {
+          
+            Debug.Log(eventData.ReadValue<float>());
+        }
+        
     }
-}
+

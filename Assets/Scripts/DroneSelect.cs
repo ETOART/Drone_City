@@ -47,23 +47,6 @@ public class DroneSelect : MonoBehaviour
     {
         
         currentIndex = 0;
-       // currentCard = cards[0];
-        
-
-        
-        
-       // EventTrigger trigger = GetComponent<EventTrigger>();
-       // EventTrigger.Entry entry = new EventTrigger.Entry();
-       // entry.eventID = EventTriggerType.BeginDrag;
-       // entry.callback.AddListener((data) => { OnBeginDrag((PointerEventData)data); });
-       // trigger.triggers.Add(entry);
-       // 
-       // 
-       // EventTrigger.Entry entry2 = new EventTrigger.Entry();
-       // entry2.eventID = EventTriggerType.EndDrag;
-       // entry2.callback.AddListener((data) => { OnEndDrag((PointerEventData)data); });
-       // trigger.triggers.Add(entry2);
-        
         
     }
     
