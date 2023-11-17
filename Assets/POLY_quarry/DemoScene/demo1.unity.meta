@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/POLY_quarry/DemoScene/demo1.unity.meta
 guid: a6122e19dc042b8439c9aae73cc1d24e
+========
+guid: f60a90c928fe7ee4cb322afc5675b963
+>>>>>>>> Phil:Assets/Levels/hangar/Hangar Building Modular/Scenes/DemoScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

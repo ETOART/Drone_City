@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Aligned Games/Realistic Modern Military Training Complex Asset Package/Scenes/Demonstration.unity.meta
 guid: 70c3ccafa41a5ad498dca0967ae35f98
+========
+guid: 390e7680918544058803beae01e84dfb
+>>>>>>>> Phil:Assets/Scenes/SampleScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Dump/Scene/Scene.unity.meta
 guid: 87f223929df85ad4c8d5f8e3e3a7f3b6
 timeCreated: 1508871216
+========
+guid: 751c9ec47ccc246ae9845f7503545585
+timeCreated: 1479470953
+>>>>>>>> Phil:Assets/LeanTween/Documentation/assets/favicon.ico.meta
 licenseType: Store
 DefaultImporter:
   userData: 
