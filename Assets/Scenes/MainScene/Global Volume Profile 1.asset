@@ -448,7 +448,7 @@ MonoBehaviour:
     m_Value: 0
   m_CloudPreset:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 4
   cumulusMap:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -629,10 +629,10 @@ MonoBehaviour:
     m_Value: 0.5
   densityMultiplier:
     m_OverrideState: 1
-    m_Value: 0.35
+    m_Value: 0.246
   shapeFactor:
     m_OverrideState: 1
-    m_Value: 0.85
+    m_Value: 1
   shapeScale:
     m_OverrideState: 1
     m_Value: 5
@@ -641,7 +641,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0}
   erosionFactor:
     m_OverrideState: 1
-    m_Value: 0.749
+    m_Value: 0.522
   erosionScale:
     m_OverrideState: 1
     m_Value: 107
