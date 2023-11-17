@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Realistic/Domestic Animals/Cow family/Cow/Cow_Scene_Demo.unity.meta
 guid: ed59aa96952b32d488522127d91eabdd
+========
+guid: d5edf5e33d54d1d4db6ae8566ad23194
+>>>>>>>> Phil:Assets/Objects/TestObjects/model.mtl.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
