@@ -350,15 +350,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9981e321af9af3647898810924b2011d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9981e321af9af3647898810924b2011d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9981e321af9af3647898810924b2011d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9981e321af9af3647898810924b2011d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -666,9 +666,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 346641364711187795, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1835165448990898591, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
       propertyPath: m_Name
       value: BigCameraSetup
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140338478725751107, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341915281271031119, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779650571253415253, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612492923899976201, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8951109124097162456, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
       propertyPath: m_LocalPosition.x
