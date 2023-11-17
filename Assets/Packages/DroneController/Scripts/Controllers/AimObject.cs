@@ -34,29 +34,37 @@ public class AimObject : MonoBehaviour
     void Update()
     {
         transform.LookAt(Camera.main.transform, transform.up);
+       // ScanObject();
+    }
+
+
+    public void ScanObject()
+    {
+        
         if (readyToCheck && scanObject!=null && !block)
         {
-            if (Input.GetKey(KeyCode.Space))
-            {
+          
                
                 scanObject.tag = "done";
                 
                 block = true;
-               GameObject cross =  Instantiate(crossObject, scanObject.transform);
-              // cross.GetComponent<LookAtConstraint>().AddSource(_pl);
+                GameObject cross =  Instantiate(crossObject, scanObject.transform);
+                // cross.GetComponent<LookAtConstraint>().AddSource(_pl);
 
-              _scanSound.Play();
-              GameManager.instance.AddScore();
-              GameManager.instance.ShowScanTargetData(scanObject);
+                _scanSound.Play();
+                GameManager.instance.AddScore();
+                GameManager.instance.ShowScanTargetData(scanObject);
                
-               LeanTween.moveY(cross, cross.transform.position.y + 25, 3).setEaseOutCirc().setOnComplete((o =>
-               {
+                LeanTween.moveY(cross, cross.transform.position.y + 25, 3).setEaseOutCirc().setOnComplete((o =>
+                {
                     //Destroy(cross);
                     block = false;
                     
-               }));
-            }
+                }));
+            
         }
+        
+        
     }
 
     private void OnTriggerEnter(Collider other)

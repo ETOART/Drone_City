@@ -55948,6 +55948,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6580646781541165397, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}
     - target: {fileID: 8764590359853934738, guid: c779f2618148d8841af6c95b87911640, type: 3}
+      propertyPath: _aimObjectScaner
+      value: 
+      objectReference: {fileID: 669747575}
+    - target: {fileID: 8764590359853934738, guid: c779f2618148d8841af6c95b87911640, type: 3}
+      propertyPath: _inputScanAimAction
+      value: 
+      objectReference: {fileID: 8650832291769308577, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}
+    - target: {fileID: 8764590359853934738, guid: c779f2618148d8841af6c95b87911640, type: 3}
       propertyPath: _inputScanAimUPDOWN
       value: 
       objectReference: {fileID: 6580646781541165397, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}

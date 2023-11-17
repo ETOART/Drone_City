@@ -13,8 +13,6 @@ public class CameraControll : MonoBehaviour
     [SerializeField] private List<Image> _images;
     [SerializeField] private GameObject debugUI;
     
-
-
     [SerializeField] private Camera _camera;
     
     [SerializeField] private TextMeshProUGUI _camera_name;

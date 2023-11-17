@@ -17,6 +17,7 @@ using UnityEngine.Serialization;
         [SerializeField] private InputActionReference _inputThrottle = default;
         [SerializeField] private InputActionReference _inputScanAimUPDOWN = default;
         [SerializeField] private InputActionReference _inputScanAimLEFTRIGHT = default;
+        [SerializeField] private InputActionReference _inputScanAimAction= default;
 
         [SerializeField] private float _pitchInput = default;
         [SerializeField] private float _rollInput = default;
@@ -25,6 +26,7 @@ using UnityEngine.Serialization;
 
 
         [SerializeField] private RotateScanArea aimObject;
+        [SerializeField] private AimObject  _aimObjectScaner;
         
         
         
@@ -49,6 +51,15 @@ using UnityEngine.Serialization;
         {
             aimObject.moveScanAreaLEFTRIGHT(_inputScanAimUPDOWN.action.ReadValue<float>());
             aimObject.moveScanAreaUPDOWN(_inputScanAimLEFTRIGHT.action.ReadValue<float>());
+
+
+           
+            if (_inputScanAimAction.action.ReadValue<float>()!=0)
+            {
+                Debug.Log("A PRESSED");
+                _aimObjectScaner.ScanObject();
+            }
+            
         }
 
         private void OnEnable()
@@ -137,7 +148,7 @@ using UnityEngine.Serialization;
         
         private void OnScanAimInputChanged(InputAction.CallbackContext eventData)
         {
-          
+            
             Debug.Log(eventData.ReadValue<float>());
         }
         

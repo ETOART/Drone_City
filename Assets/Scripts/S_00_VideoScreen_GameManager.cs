@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class S_01_VideoScreen_GameManager : MonoBehaviour
+public class S_00_VideoScreen_GameManager : MonoBehaviour
 {
 
     [SerializeField] private string scenename = "S_02_DroneSelect";

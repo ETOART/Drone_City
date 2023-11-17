@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 1061.1798, g: 1097.7062, b: 1275.5695, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d0e3ac6b3bfac4d914e36b6364a314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: S_02_DroneSelect
+  scenename: S_00_Tutorial
 --- !u!114 &1212822238
 MonoBehaviour:
   m_ObjectHideFlags: 0
