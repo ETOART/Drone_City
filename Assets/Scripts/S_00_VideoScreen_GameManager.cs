@@ -8,11 +8,10 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 {
 
     [SerializeField] private string scenename = "S_02_DroneSelect";
-    
+    private bool start = false;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -22,6 +21,12 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         {
             StartGame();
         }
+        if (start)
+        {
+            StartGame();
+            start = false;
+        }
+
     }
 
     public void StartGame()
@@ -31,12 +36,12 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         SceneManager.LoadScene(scenename);
         
     }
-    public  string TakeNewID()
+    public  string TakeNewID(string sum)
     {
-        StartGame();
+        start = true;
         var result = Guid.NewGuid().ToString();
+        Debug.Log(result);
         return result;
     }
-
 
 }
