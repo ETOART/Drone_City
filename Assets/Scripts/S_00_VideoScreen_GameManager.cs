@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class S_00_VideoScreen_GameManager : MonoBehaviour
 {
@@ -30,4 +31,12 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         SceneManager.LoadScene(scenename);
         
     }
+    public  string TakeNewID()
+    {
+        StartGame();
+        var result = Guid.NewGuid().ToString();
+        return result;
+    }
+
+
 }
