@@ -23,7 +23,7 @@ public class HTTPServer
         Debug.Log("Http Server is running at http://localhost:8080/");
     }
 
-    private void OnDestroy()
+    public void OnDestroy()
     {
         listener.Stop();
         listenerThread.Abort();
