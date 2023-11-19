@@ -8,7 +8,7 @@ public class HTTPServer
 {
     private HttpListener listener;
     private Thread listenerThread;
-    public System.Func<string,string> callback;
+    public System.Func<string, string> callback;
 
     public void Start()
     {
@@ -38,7 +38,7 @@ public class HTTPServer
             {
                 try
                 {
-                    var sessionID = callback("SessionId_sample123");
+                    var sessionID = callback("");
                     var responseString = sessionID;
                     var buffer = Encoding.UTF8.GetBytes(responseString);
                     var response = context.Response;
