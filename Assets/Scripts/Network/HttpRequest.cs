@@ -13,27 +13,22 @@ public class HttpRequest : MonoBehaviour
 
     [SerializeField] private string here_session_id;
 
-    public void Start()
+    public void SendScore( int _score)
     {
-        StartCoroutine(SendRequest());
+        StartCoroutine(SendRequest( _score));
     }
 
-    void Update()
+    private IEnumerator SendRequest(int _score)
     {
-        
-    }
-    
-
-    private IEnumerator SendRequest(){
 
         WWWForm scoreData = new WWWForm();
 
         ScoreStruc score = new ScoreStruc()
         {
 
-            session_id = here_session_id,
+            session_id = IDGenerator.TakeID(),
 
-            score = here_score
+            score = _score
 
         };
         

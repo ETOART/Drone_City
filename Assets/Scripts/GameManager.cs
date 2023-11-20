@@ -47,8 +47,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _droneContainer;
 
     [SerializeField] private List<GameObject> drones;
-    
-    
+
+    [SerializeField] private HttpRequest httpRequest;
+
     private void Start()
     {
         // Starts the timer automatically
@@ -105,6 +106,9 @@ public class GameManager : MonoBehaviour
         
         Debug.Log("Game over");
         Debug.Log("Score : " + score);
+
+        httpRequest.SendScore(score);
+
         Camera.GetComponent<CameraMovement>().enabled = false;
         LeanTween.alphaCanvas(_mainUI, 0, 2f).setDelay(2f).setEaseLinear();
         _inputManager.OnDisable();

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2064.3987, g: 1961.4495, b: 1948.9299, a: 1}
+  m_IndirectSpecularColor: {r: 2064.4358, g: 1961.4456, b: 1948.9338, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4079,6 +4079,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c4235dda92c7b14682e3e5bcce17999, type: 3}
+--- !u!1 &1429314412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429314414}
+  - component: {fileID: 1429314413}
+  m_Layer: 0
+  m_Name: HttpRequester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1429314413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429314412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cfc48a3075bbf48b0a5f050b2c4e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: 
+  here_score: 0
+  here_session_id: 
+--- !u!4 &1429314414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429314412}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1131.4323, y: -188.11688, z: -5223.3574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440262985
 GameObject:
   m_ObjectHideFlags: 1
@@ -5991,6 +6038,7 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 888bd5293ab48e342b39a36f76d1035b, type: 3}
   - {fileID: 8278598453646067595, guid: d5ddbb42851586a4a89569f191067f1f, type: 3}
   - {fileID: 1746879307137236327, guid: 6294d474836cbd544b9f3058e685dd7b, type: 3}
+  httpRequest: {fileID: 1429314413}
 --- !u!4 &1865024104
 Transform:
   m_ObjectHideFlags: 0
@@ -6804,3 +6852,4 @@ SceneRoots:
   - {fileID: 978255434}
   - {fileID: 1440262987}
   - {fileID: 1865024104}
+  - {fileID: 1429314414}
