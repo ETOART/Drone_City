@@ -22,10 +22,10 @@ public class HttpRequest : MonoBehaviour
     {
 
         WWWForm scoreData = new WWWForm();
-
+        Debug.Log("Generate new ID: " + IDGenerator.TakeID());
         ScoreStruc score = new ScoreStruc()
         {
-
+            
             session_id = IDGenerator.TakeID(),
 
             score = _score

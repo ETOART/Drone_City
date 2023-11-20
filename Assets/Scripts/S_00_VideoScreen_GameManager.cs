@@ -35,8 +35,9 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 
         Debug.Log("sceneName to load: " + scenename);
         SceneManager.LoadSceneAsync(scenename);
-
-        return IDGenerator.TakeNewID();
+        string ID = IDGenerator.TakeNewID();
+        Debug.Log("Generate new ID: " + ID);
+        return ID;
 
     }
    
