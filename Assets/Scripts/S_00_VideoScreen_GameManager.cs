@@ -34,7 +34,7 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         start = true;
 
         Debug.Log("sceneName to load: " + scenename);
-        SceneManager.LoadScene(scenename);
+        SceneManager.LoadSceneAsync(scenename);
 
         return IDGenerator.TakeNewID();
 
