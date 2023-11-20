@@ -66,3 +66,21 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Hangar Building Modular/Materials/mat_box.mat
+Assets/Hangar Building Modular/Materials/mat_floor.mat
+Assets/Hangar Building Modular/Materials/mat_frame.mat
+Assets/Hangar Building Modular/Materials/mat_gate.mat
+Assets/Hangar Building Modular/Materials/mat_generator.mat
+Assets/Hangar Building Modular/Materials/mat_lamp.mat
+Assets/Hangar Building Modular/Materials/mat_pallet.mat
+Assets/Hangar Building Modular/Materials/mat_roof.mat
+Assets/Hangar Building Modular/Materials/mat_roof_frame.mat
+Assets/Hangar Building Modular/Materials/mat_roof_windows.mat
+Assets/Hangar Building Modular/Materials/mat_scaffold.mat
+Assets/Hangar Building Modular/Materials/mat_scaffold_small.mat
+Assets/Hangar Building Modular/Materials/mat_toolbox.mat
+Assets/Hangar Building Modular/Materials/mat_trolley.mat
+Assets/Hangar Building Modular/Materials/mat_trolley_frame.mat
+Assets/Hangar Building Modular/Materials/mat_wall.mat
+Assets/Hangar Building Modular/Materials/mat_wall_frame.mat
+Assets/Hangar Building Modular/Materials/mat_wall_metall.mat

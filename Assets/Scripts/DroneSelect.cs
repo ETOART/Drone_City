@@ -23,10 +23,10 @@ public class DroneSelect : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject selectedDrone;
     [SerializeField] private CanvasGroup _blackScreen;
-    
-    
-    
-    
+
+    [SerializeField] private InputManager _inputManager;
+
+
     [SerializeField]
     private int currentIndex;
     [SerializeField] 
