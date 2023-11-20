@@ -50,7 +50,7 @@ public class HTTPServer
                 }
                 catch (Exception e)
                 {
-                    Debug.LogError(e.ToString());
+                  //  Debug.LogError(e.ToString());
                 }
             }, context);
         }
