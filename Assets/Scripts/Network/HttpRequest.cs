@@ -8,7 +8,7 @@ using System.Text;
 
 public class HttpRequest : MonoBehaviour
 {
-    [SerializeField] private string url;
+     private string url = "http://localhost:8000/setscore/";
     [SerializeField] private int here_score;
 
     [SerializeField] private string here_session_id;

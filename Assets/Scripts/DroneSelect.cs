@@ -9,6 +9,7 @@ using System.IO.Compression;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -18,15 +19,15 @@ public class DroneSelect : MonoBehaviour
 {
     #region Props
 
-
+    
     [SerializeField] private CinemachineVirtualCamera _virtualCamera;
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject selectedDrone;
     [SerializeField] private CanvasGroup _blackScreen;
-
-    [SerializeField] private InputManager _inputManager;
-
-
+    
+    
+    
+    
     [SerializeField]
     private int currentIndex;
     [SerializeField] 
@@ -40,7 +41,14 @@ public class DroneSelect : MonoBehaviour
     public bool animate = true; 
     private bool debug = false;
     #endregion
+
+
+    [SerializeField] private float prevTemp;
     
+    [SerializeField] private InputActionReference _inputScanAimUPDOWN = default;
+    [SerializeField] private InputActionReference _inputScanAimLEFTRIGHT = default;
+    
+    [SerializeField] private InputActionReference _inputScanAimAction= default;
     
     // Start is called before the first frame update
     void Start()
@@ -64,17 +72,12 @@ public class DroneSelect : MonoBehaviour
 
     public void move(int dir)
     {
-        //if (currentLtDescr != null)
-        //{
-        //    LeanTween.cancel(currentLtDescr.id);
-        //    currentLtDescr = null;
-        //}
 
        
-        int nextIndex;
+       int nextIndex;
             
         
-         nextIndex = currentIndex + dir;
+       nextIndex = currentIndex + dir;
          
          
        if (nextIndex < 0)
@@ -93,29 +96,6 @@ public class DroneSelect : MonoBehaviour
 
         Debug.Log(currentIndex);
 
-        // if (nextIndex >= 0 && nextIndex < elements.Count)
-        // {
-        //     GameObject card = elements[nextIndex];
-        //     
-        //     
-        //     temp = currentIndex;
-        //     currentIndex = nextIndex;
-        //     
-        //     float result = card.transform.position.x+5f*dir;
-        //     currentLtDescr = LeanTween.moveLocalX(card.gameObject, result, 0.5f).setOnComplete(onPosition);
-        //     if (animate) animateMove(temp, currentIndex);
-        //     
-        // }
-        // else
-        // {
-//
-        //     if (debug)
-        //     {
-        //         Debug.Log("Движение невозможно");
-//
-        //     }
-        //     
-        // }
     }
 
     private void animateMove(int current, int next)
@@ -144,16 +124,52 @@ public class DroneSelect : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Selected");
-            PlayerPrefs.SetInt("DroneSelected",currentIndex);
-            _animator.SetBool("DroneSelected",true);
-            
-            elements[currentIndex].GetComponentInChildren<Animator>().SetBool("DroneFly",true);
-            LeanTween.alphaCanvas(_blackScreen, 1, 2f).setDelay(2f).setEaseLinear().setOnComplete(StartGameLevel);
+            DroneSelected();
+        }
+
+
+      
+        float leftUpCross = _inputScanAimLEFTRIGHT.action.ReadValue<float>();
+        if (leftUpCross != prevTemp)
+        {
+            prevTemp = leftUpCross;
+            if (leftUpCross > 0)
+            {
+                move(1);
+            }
+
+            if (leftUpCross < 0)
+            {
+                move(-1);
+            } 
             
         }
+       
+        
+        
+            
+            
+            
+        if (_inputScanAimAction.action.ReadValue<float>()!=0)
+        {
+            Debug.Log("A PRESSED");
+            DroneSelected();
+        }
+
+        
+        
     }
 
+    public void DroneSelected()
+    {
+        Debug.Log("Selected");
+        PlayerPrefs.SetInt("DroneSelected",currentIndex);
+        _animator.SetBool("DroneSelected",true);
+            
+        elements[currentIndex].GetComponentInChildren<Animator>().SetBool("DroneFly",true);
+        LeanTween.alphaCanvas(_blackScreen, 1, 2f).setDelay(2f).setEaseLinear().setOnComplete(StartGameLevel);
+
+    }
 
     public void StartGameLevel()
     {

@@ -49,12 +49,20 @@ using UnityEngine.Serialization;
 
         public void Update()
         {
+            
+           
+            
+            
+            if(aimObject)
+        {
             aimObject.moveScanAreaLEFTRIGHT(_inputScanAimUPDOWN.action.ReadValue<float>());
             aimObject.moveScanAreaUPDOWN(_inputScanAimLEFTRIGHT.action.ReadValue<float>());
+        }
 
 
-           
-            if (_inputScanAimAction.action.ReadValue<float>()!=0)
+
+
+        if (_inputScanAimAction.action.ReadValue<float>()!=0 && _aimObjectScaner!=null)
             {
                 Debug.Log("A PRESSED");
                 _aimObjectScaner.ScanObject();
