@@ -31,8 +31,12 @@ namespace DroneController
         public Vector3 Velocity { get { return _rigidbody.velocity; } }
 
         // Private properties.
+
+        [SerializeField] private int DroneType ;
+        
         public InputManager InputManager
         {
+            
             get
             {
                 if (_inputManager == null)
@@ -45,6 +49,9 @@ namespace DroneController
 
         protected virtual void Awake()
         {
+           
+            
+            DroneType = PlayerPrefs.GetInt("DroneSelected");
             _rigidbody = GetComponent<Rigidbody>();
         }
 
@@ -140,8 +147,20 @@ namespace DroneController
         /// </summary>
         public void PitchForce(float pitchInput)
         {
-            _rigidbody.AddRelativeForce(Vector3.forward * pitchInput * _droneMovementData.ForwardMovementForce);
-            _currentPitchAmount = Mathf.SmoothDamp(_currentPitchAmount, _droneMovementData.MaximumPitchAmount * pitchInput, ref _currentPitchAmountVelocity, _droneMovementData.PitchRollTiltSpeed);
-        }
+            if(DroneType==1)
+            {
+                _rigidbody.AddRelativeForce(Vector3.forward * pitchInput * _droneMovementData.ForwardMovementForce);
+                _currentPitchAmount = Mathf.SmoothDamp(_currentPitchAmount, _droneMovementData.MaximumPitchAmount * pitchInput, ref _currentPitchAmountVelocity, _droneMovementData.PitchRollTiltSpeed);
+            }
+            else
+            {
+                if (pitchInput >= 0)
+                {
+                    _rigidbody.AddRelativeForce(Vector3.forward * pitchInput * _droneMovementData.ForwardMovementForce);
+                    _currentPitchAmount = Mathf.SmoothDamp(_currentPitchAmount, _droneMovementData.MaximumPitchAmount * pitchInput, ref _currentPitchAmountVelocity, _droneMovementData.PitchRollTiltSpeed);
+
+                }
+            }
+         }
     }
 }
