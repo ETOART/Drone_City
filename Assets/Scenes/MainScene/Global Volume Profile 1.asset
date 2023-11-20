@@ -248,11 +248,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   enable:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   localClouds:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   earthCurvature:
     m_OverrideState: 0
     m_Value: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0}
   bottomAltitude:
     m_OverrideState: 1
-    m_Value: 1000
+    m_Value: 1000.8
   altitudeRange:
     m_OverrideState: 1
     m_Value: 5000
@@ -296,7 +296,7 @@ MonoBehaviour:
     m_Value: 0
   m_CloudPreset:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 4
   cumulusMap:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -477,10 +477,10 @@ MonoBehaviour:
     m_Value: 0.5
   densityMultiplier:
     m_OverrideState: 1
-    m_Value: 0.35
+    m_Value: 0.119
   shapeFactor:
     m_OverrideState: 1
-    m_Value: 0.85
+    m_Value: 0.862
   shapeScale:
     m_OverrideState: 1
     m_Value: 5
@@ -489,10 +489,10 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0}
   erosionFactor:
     m_OverrideState: 1
-    m_Value: 0.749
+    m_Value: 0.719
   erosionScale:
-    m_OverrideState: 1
-    m_Value: 107
+    m_OverrideState: 0
+    m_Value: 27.5
   erosionNoiseType:
     m_OverrideState: 1
     m_Value: 1
@@ -516,7 +516,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value:
       mode: 0
-      customValue: 2
+      customValue: 0
       additiveValue: 0
       multiplyValue: 1
   altitudeDistortion:
