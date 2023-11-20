@@ -4,6 +4,7 @@ using DroneController;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -122,11 +123,12 @@ public class GameManager : MonoBehaviour
             
         }));
 
+
     }
 
     public void StartScoreLevel()
     {
-        
+        SceneManager.LoadSceneAsync("S_04_FinalScreen");
     }
 
     public void ShowScanTargetData(GameObject target)
