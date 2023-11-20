@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 8045.04, g: 8299.829, b: 9609.228, a: 1}
+  m_IndirectSpecularColor: {r: 11988.501, g: 12459.314, b: 14567.314, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -909,6 +909,7 @@ MonoBehaviour:
   _animator: {fileID: 503216748}
   selectedDrone: {fileID: 0}
   _blackScreen: {fileID: 1554169410}
+  _inputManager: {fileID: 0}
   currentIndex: 0
   elements:
   - {fileID: 1660112647}
@@ -1618,9 +1619,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 698473341327511522, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 721445516361226863, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 943668359149535548, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 150000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094495513398915493, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126473357757152053, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 787816.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126473357757152053, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_UseColorTemperature
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624659586012267836, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 9900000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2813311125613354972, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.8208594
+      objectReference: {fileID: 0}
     - target: {fileID: 3302568867573124852, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306447905466452556, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 9900000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367561563094218731, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019661532789227235, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334527953105851509, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 150000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350641855809335503, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 9900000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521692090124879297, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548395832710025158, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00000032089233
       objectReference: {fileID: 0}
     - target: {fileID: 5541407955034017022, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
       propertyPath: m_Name
@@ -1628,7 +1689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6628460512992815469, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.8964
+      value: 7.94
       objectReference: {fileID: 0}
     - target: {fileID: 6628460512992815469, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1664,6 +1725,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6628460512992815469, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825900117582710212, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068256608517022604, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328088247450951765, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 787816.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328088247450951765, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_UseColorTemperature
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7606181079530666631, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 9900000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282726008221648636, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383803392377171059, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 787816.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383803392377171059, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_UseColorTemperature
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162859053682584035, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_Intensity
+      value: 787816.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162859053682584035, guid: e0a45676bcc214745a090cd3d8943422, type: 3}
+      propertyPath: m_UseColorTemperature
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
