@@ -41,7 +41,7 @@ namespace DroneController
         private void ApplyCameraRotation()
         {
             transform.rotation = Quaternion.Euler(
-                14 + _cameraTiltRotation,
+                0 + _cameraTiltRotation,
                 _objecToFollow.rotation.eulerAngles.y,
                 0);
         }

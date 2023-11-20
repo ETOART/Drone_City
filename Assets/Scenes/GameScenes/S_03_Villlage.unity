@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -134,6 +134,18 @@ PrefabInstance:
     - target: {fileID: 7029813618187953320, guid: 80fbfe1b2d5513747b6077c266a84813, type: 3}
       propertyPath: m_Name
       value: DroneLogicContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764477693836929414, guid: 80fbfe1b2d5513747b6077c266a84813, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764477693836929414, guid: 80fbfe1b2d5513747b6077c266a84813, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764477693836929414, guid: 80fbfe1b2d5513747b6077c266a84813, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8176112323398405263, guid: 80fbfe1b2d5513747b6077c266a84813, type: 3}
       propertyPath: m_LocalPosition.x
