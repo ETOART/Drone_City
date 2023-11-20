@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2065.7913, g: 1962.7483, b: 1950.052, a: 1}
+  m_IndirectSpecularColor: {r: 2066.098, g: 1962.969, b: 1950.2385, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1417,6 +1417,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 44822355}
   HitSphere: {fileID: 0}
+  main_camera: {fileID: 0}
+  _RCenter: {fileID: 0}
 --- !u!4 &733109332
 Transform:
   m_ObjectHideFlags: 0
@@ -2753,18 +2755,6 @@ PrefabInstance:
     - target: {fileID: 1835165448990898591, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
       propertyPath: m_Name
       value: BigCameraSetup
-      objectReference: {fileID: 0}
-    - target: {fileID: 3917148170785250416, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8660254
-      objectReference: {fileID: 0}
-    - target: {fileID: 3917148170785250416, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3917148170785250416, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 8951109124097162456, guid: cec20e74abfc67b47866deaac8bd6005, type: 3}
       propertyPath: m_LocalPosition.x
