@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2066.098, g: 1962.969, b: 1950.2385, a: 1}
+  m_IndirectSpecularColor: {r: 2032.4866, g: 2005.4358, b: 2191.9016, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1739,6 +1739,7 @@ MonoBehaviour:
   crossObject: {fileID: 5430970523408339575, guid: 6463a1040128fb949b1882c6e8e20ff4, type: 3}
   block: 0
   _player: {fileID: 0}
+  _scanSound: {fileID: 0}
 --- !u!1 &711442470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,6 +1973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 90703991}
   HitSphere: {fileID: 669747572}
+  main_camera: {fileID: 0}
+  _RCenter: {fileID: 0}
 --- !u!1 &963453636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,28 +2158,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 192
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 88
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3167
+      value: -3215
       objectReference: {fileID: 0}
     - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2206,17 +2197,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5300906267555873287, guid: 6a770427fedce62449d8587608679756, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5885638972727559079, guid: 6a770427fedce62449d8587608679756, type: 3}
       propertyPath: m_Name
       value: mainSceneCity
-      objectReference: {fileID: 0}
-    - target: {fileID: 5885638972727559079, guid: 6a770427fedce62449d8587608679756, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
