@@ -13,7 +13,7 @@ public class ServerStart : MonoBehaviour
         DontDestroyOnLoad(transform);
         server = new HTTPServer();
         // ниже передать функцию начала игровой сессии, котоаря возвращает строку с ssesionID
-        server.callback = str => _VideoScreen_GameManager.TakeNewID("");
+        server.callback = str => _VideoScreen_GameManager.StartGame();
         server.Start();
 
         Debug.Log("Стартанул");

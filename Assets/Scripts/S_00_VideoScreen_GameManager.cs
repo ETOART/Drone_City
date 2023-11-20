@@ -29,19 +29,16 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 
     }
 
-    public void StartGame()
-    {
-        
-        Debug.Log("sceneName to load: " + scenename);
-        SceneManager.LoadScene(scenename);
-        
-    }
-    public  string TakeNewID(string sum)
+    public string StartGame()
     {
         start = true;
-        var result = Guid.NewGuid().ToString();
-        Debug.Log(result);
-        return result;
+
+        Debug.Log("sceneName to load: " + scenename);
+        SceneManager.LoadScene(scenename);
+
+        return IDGenerator.TakeNewID();
+
     }
+   
 
 }
