@@ -101,7 +101,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ANISOTROPY: 0
+    - _ANISOTROPY: 0.649
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -118,11 +118,11 @@ Material:
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
     - _BASE_COLOR_WEIGHT: 1
-    - _BUMP_MAP_STRENGTH: 0.3
+    - _BUMP_MAP_STRENGTH: 0
     - _BlendMode: 0
     - _BumpScale: 1
     - _COAT_IOR: 0
-    - _COAT_ROUGHNESS: 0
+    - _COAT_ROUGHNESS: 0.287
     - _COAT_THICKNESS: 5
     - _COAT_WEIGHT: 0
     - _CoatMask: 0
@@ -188,8 +188,8 @@ Material:
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
     - _Parallax: 0.02
-    - _REFLECTIONS_IOR: 11.9
-    - _REFLECTIONS_ROUGHNESS: 0.222
+    - _REFLECTIONS_IOR: 9.8
+    - _REFLECTIONS_ROUGHNESS: 0.549
     - _REFLECTIONS_WEIGHT: 0
     - _RayTracing: 0
     - _ReceivesSSR: 1
@@ -256,7 +256,7 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _REFLECTIONS_COLOR: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _REFLECTIONS_COLOR: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _TRANSPARENCY: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
