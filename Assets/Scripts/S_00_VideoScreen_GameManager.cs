@@ -9,12 +9,12 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 
     [SerializeField] private string scenename = "S_02_DroneSelect";
     private bool start = false;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private ServerStart serverStart;
+    private void Start()
     {
+        IDGenerator.isGame = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -32,7 +32,7 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
     public string StartGame()
     {
         start = true;
-
+        IDGenerator.isGame = true;
         Debug.Log("sceneName to load: " + scenename);
         SceneManager.LoadSceneAsync(scenename);
         string ID = IDGenerator.TakeNewID();
