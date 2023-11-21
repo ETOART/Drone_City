@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4108.6216, g: 4055.4966, b: 4455.0396, a: 1}
+  m_IndirectSpecularColor: {r: 4109.2466, g: 4056.0356, b: 4455.77, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2290304762457655459, guid: 80fbfe1b2d5513747b6077c266a84813, type: 3}
+      propertyPath: field of view
+      value: 81.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7029813618187953320, guid: 80fbfe1b2d5513747b6077c266a84813, type: 3}
       propertyPath: m_Name
       value: DroneLogicContainer
@@ -17947,7 +17951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10c2abd53476444cb46968942156022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
+  timeRemaining: 180
   timerIsRunning: 0
   timeText: {fileID: 1717530742}
   _scoreUI: {fileID: 1501735801}
