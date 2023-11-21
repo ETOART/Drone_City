@@ -4,7 +4,6 @@ using System;
 public class IDGenerator 
 {
     private static string ID = "";
-
     public static string TakeNewID()
     {
         return GenerateID();

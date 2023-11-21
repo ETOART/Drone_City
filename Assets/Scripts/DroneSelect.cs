@@ -167,13 +167,14 @@ public class DroneSelect : MonoBehaviour
         _animator.SetBool("DroneSelected",true);
             
         elements[currentIndex].GetComponentInChildren<Animator>().SetBool("DroneFly",true);
+        _blackScreen.gameObject.SetActive(true);
         LeanTween.alphaCanvas(_blackScreen, 1, 2f).setDelay(2f).setEaseLinear().setOnComplete(StartGameLevel);
 
     }
 
     public void StartGameLevel()
     {
-        SceneManager.LoadScene("S_03_Villlage");
+        SceneManager.LoadSceneAsync("S_03_Villlage");
     }
     
     
