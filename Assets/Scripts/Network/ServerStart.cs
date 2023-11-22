@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class ServerStart : MonoBehaviour
 {
-
     [SerializeField] private SessionController sessionController;
-    // Start is called before the first frame update
-    HTTPServer server;
 
-    public bool isGame = false;
+    private static ServerStart instance;
+    HTTPServer server;
+    // Публичное свойство для доступа к единственному экземпляру класса
+    public static ServerStart Instance;
+
+
+
     void Awake()
     {
-        DontDestroyOnLoad(transform);
+
+        if (ServerStart.instance != null && ServerStart.instance != this)
+        {
+            // Уничтожаем текущий объект, если уже есть экземпляр
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            // Если это первый экземпляр, делаем его постоянным
+            ServerStart.instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+
         server = new HTTPServer();
         // ниже передать функцию начала игровой сессии, котоаря возвращает строку с ssesionID
         server.callback = str => sessionController.StartGame();
