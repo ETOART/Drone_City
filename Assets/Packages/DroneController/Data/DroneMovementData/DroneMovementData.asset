@@ -16,7 +16,7 @@ MonoBehaviour:
   MaximumRollSpeed: 10
   MaximumYawSpeed: 3
   IdleUpForce: 98.10001
-  ForwardMovementForce: 750
+  ForwardMovementForce: 1200
   SidewardMovementForce: 450
   UpwardMovementForce: 450
   DownwardMovementForce: 250

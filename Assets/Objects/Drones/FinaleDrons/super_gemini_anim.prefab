@@ -80,9 +80,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5896679075394214364, guid: c07d4386ae38ce14c89b866122c33fda, type: 3}
+      propertyPath: m_RendererPriority
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -4710149848711808421, guid: c07d4386ae38ce14c89b866122c33fda, type: 3}
+      propertyPath: m_RendererPriority
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -3327003737532394571, guid: c07d4386ae38ce14c89b866122c33fda, type: 3}
+      propertyPath: m_RendererPriority
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -142079954925820738, guid: c07d4386ae38ce14c89b866122c33fda, type: 3}
+      propertyPath: m_RendererPriority
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c07d4386ae38ce14c89b866122c33fda, type: 3}
       propertyPath: m_Name
       value: super_gemini_anim
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728031443505597756, guid: c07d4386ae38ce14c89b866122c33fda, type: 3}
+      propertyPath: m_RendererPriority
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
