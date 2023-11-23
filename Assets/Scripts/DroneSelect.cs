@@ -173,9 +173,17 @@ public class DroneSelect : MonoBehaviour
         StartGameLevel();
     }
 
+
+    private bool gameStart = false;
     public void StartGameLevel()
     {
-        SceneManager.LoadSceneAsync("S_03_Villlage");
+        if (!gameStart)
+        {
+            gameStart = true;
+            SceneManager.LoadSceneAsync("S_03_Villlage");
+        }
+        
+       
     }
     
     

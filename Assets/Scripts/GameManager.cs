@@ -146,9 +146,15 @@ public class GameManager : MonoBehaviour
 
     }
 
+    private bool gameStart = false;
     public void StartScoreLevel()
     {
-        SceneManager.LoadSceneAsync(4 , LoadSceneMode.Additive);
+        if (!gameStart)
+        {
+            gameStart = true;
+            SceneManager.LoadSceneAsync(4 , LoadSceneMode.Additive);
+        }
+        
     }
 
     public void ShowScanTargetData(GameObject target)

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 1081.4894, g: 1100.6173, b: 1242.4532, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d0e3ac6b3bfac4d914e36b6364a314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: S_01_Tutorial
+  scenename: S_03_Villlage
   serverStart: {fileID: 1986943632}
   sessionController: {fileID: 1727862052}
 --- !u!4 &1276084363

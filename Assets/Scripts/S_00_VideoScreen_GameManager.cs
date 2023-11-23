@@ -22,21 +22,23 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         {
             StartGame();
         }
-        if (start)
-        {
-            StartGame();
-            start = false;
-        }
+       // if (start)
+       // {
+       //     StartGame();
+       //     start = false;
+       // }
 
     }
 
     public void StartGame()
     {
-        start = true;
-        Debug.Log("sceneName to load: " + scenename);
-        sessionController.isGame = true;
-        SceneManager.LoadSceneAsync(scenename);
-
+        if (!start)
+        {
+            start = true;
+            Debug.Log("sceneName to load: " + scenename);
+            sessionController.isGame = true;
+            SceneManager.LoadSceneAsync(scenename);
+        }
     }
    
 

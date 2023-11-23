@@ -97,7 +97,14 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("sceneName to load: " + scenename);
-        SceneManager.LoadScene(scenename);
+        if (!gameStarted)
+        {
+            gameStarted = true;
+            Debug.Log("sceneName to load: " + scenename);
+            SceneManager.LoadScene(scenename);
+        }
+
     }
+
+    private bool gameStarted = false;
 }

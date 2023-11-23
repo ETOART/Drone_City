@@ -1,17 +1,26 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace DroneController
 {
     public class CameraMovement : MonoBehaviour
     {
         [Header("Project References:")]
-        [SerializeField] private CameraMovementData _cameraMovementData = default;
+        [SerializeField] private CameraMovementData _cameraMovementData ;
         [Header("Scene References:")]
-        [SerializeField] private Transform _objecToFollow = default; //our drone game object
+        [SerializeField] private Transform _objecToFollow; //our drone game object
 
         private Vector3 _positionVelocity = default;
         private float _cameraTiltRotation = default;
         private float _previousFrameCameraPosition = default;
+
+
+        private void Start()
+        {
+            _previousFrameCameraPosition = transform.position.y;
+            
+        }
+
 
         protected virtual void FixedUpdate()
         {
