@@ -27,6 +27,7 @@ using UnityEngine.Serialization;
 
         [SerializeField] private RotateScanArea aimObject;
         [SerializeField] private AimObject  _aimObjectScaner;
+        [SerializeField] private AudioSource _ButtonPress;
         
         
         
@@ -53,19 +54,17 @@ using UnityEngine.Serialization;
            
             
             
-            if(aimObject)
-        {
+            
             aimObject.moveScanAreaLEFTRIGHT(_inputScanAimUPDOWN.action.ReadValue<float>());
             aimObject.moveScanAreaUPDOWN(_inputScanAimLEFTRIGHT.action.ReadValue<float>());
-        }
-
-
-
-
-        if (_inputScanAimAction.action.ReadValue<float>()!=0 && _aimObjectScaner!=null)
+            
+                
+            
+            if (_inputScanAimAction.action.ReadValue<float>()!=0 && _aimObjectScaner!=null)
             {
                 Debug.Log("A PRESSED");
                 _aimObjectScaner.ScanObject();
+                //_ButtonPress.Play();
             }
             
         }

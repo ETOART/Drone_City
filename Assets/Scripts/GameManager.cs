@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using DroneController;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
     #region Time
 
     public float timeRemaining =  3;//60 *
+    [SerializeField] private float endingAlarmTime;
+    [SerializeField] private bool endingAlarmDone;
+    
+    
     public bool timerIsRunning = false;
     public TextMeshProUGUI timeText;
 
@@ -51,6 +55,14 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private HttpRequest httpRequest;
 
+    [SerializeField] private AudioSource _timeUpSound;
+    [SerializeField] private AudioSource _timeEndingSound;
+
+
+
+
+
+
     private void Start()
     {
         // Starts the timer automatically
@@ -76,8 +88,16 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                _timeUpSound.Play();
                 GameEnd();
             }
+            
+            if (timeRemaining < endingAlarmTime && !endingAlarmDone)
+            {
+                endingAlarmDone = true;
+                _timeEndingSound.Play();
+            }
+            
         }
     }
 
@@ -108,6 +128,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game over");
         Debug.Log("Score : " + score);
 
+
         httpRequest.SendScore(score);
 
         Camera.GetComponent<CameraMovement>().enabled = false;
@@ -123,12 +144,11 @@ public class GameManager : MonoBehaviour
             
         }));
 
-
     }
 
     public void StartScoreLevel()
     {
-        SceneManager.LoadSceneAsync("S_04_FinalScreen");
+        SceneManager.LoadSceneAsync(4);
     }
 
     public void ShowScanTargetData(GameObject target)

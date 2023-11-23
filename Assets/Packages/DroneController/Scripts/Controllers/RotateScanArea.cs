@@ -56,7 +56,7 @@ public class RotateScanArea : MonoBehaviour
             if (viewPos.x >=0 && value < 0)
             {
                 
-                transform.RotateAround(_RCenter.transform.position, Vector3.up, 40 * value * Time.deltaTime);
+                transform.RotateAround( _RCenter.transform.position, Vector3.up, 40 * value * Time.deltaTime);
                 
             }
             else

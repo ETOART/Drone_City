@@ -24,7 +24,8 @@ public class DroneSelect : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject selectedDrone;
     [SerializeField] private CanvasGroup _blackScreen;
-    
+
+    [SerializeField] private AudioSource _droneSelectSound;
     
     
     
@@ -162,19 +163,19 @@ public class DroneSelect : MonoBehaviour
 
     public void DroneSelected()
     {
+        _droneSelectSound.Play();
         Debug.Log("Selected");
         PlayerPrefs.SetInt("DroneSelected",currentIndex);
         _animator.SetBool("DroneSelected",true);
             
         elements[currentIndex].GetComponentInChildren<Animator>().SetBool("DroneFly",true);
-        _blackScreen.gameObject.SetActive(true);
         LeanTween.alphaCanvas(_blackScreen, 1, 2f).setDelay(2f).setEaseLinear().setOnComplete(StartGameLevel);
 
     }
 
     public void StartGameLevel()
     {
-        SceneManager.LoadSceneAsync("S_03_Villlage");
+        SceneManager.LoadScene("S_03_Villlage");
     }
     
     

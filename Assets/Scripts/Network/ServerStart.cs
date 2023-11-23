@@ -16,17 +16,17 @@ public class ServerStart : MonoBehaviour
     void Awake()
     {
 
-        if (ServerStart.instance != null && ServerStart.instance != this)
-        {
-            // Уничтожаем текущий объект, если уже есть экземпляр
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            // Если это первый экземпляр, делаем его постоянным
-            ServerStart.instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        //if (ServerStart.instance != null && ServerStart.instance != this)
+        //{
+        //    // Уничтожаем текущий объект, если уже есть экземпляр
+        //    Destroy(this.gameObject);
+        //}
+        //else
+        //{
+        //    // Если это первый экземпляр, делаем его постоянным
+        //    ServerStart.instance = this;
+        //    DontDestroyOnLoad(this.gameObject);
+        //}
 
         server = new HTTPServer();
         // ниже передать функцию начала игровой сессии, котоаря возвращает строку с ssesionID

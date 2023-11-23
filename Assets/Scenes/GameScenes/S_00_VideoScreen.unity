@@ -169,7 +169,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59304012}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ad3f719f7b875444cb66da5840820fee, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 656123b34376ced40a84e2df0e019178, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -183,14 +183,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -499,7 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenename: S_01_Tutorial
   serverStart: {fileID: 1986943632}
-  sessionController: {fileID: 1986943634}
+  sessionController: {fileID: 1727862052}
 --- !u!4 &1276084363
 Transform:
   m_ObjectHideFlags: 0
@@ -649,6 +647,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628933770}
   m_CullTransparentMesh: 1
+--- !u!1 &1727862051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727862053}
+  - component: {fileID: 1727862052}
+  m_Layer: 0
+  m_Name: SessionController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1727862052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727862051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edef9d2af6f79254c942eeacbfa2df2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _VideoScreen_GameManager: {fileID: 1276084362}
+  isGame: 0
+--- !u!4 &1727862053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727862051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 786.74915, y: 75.79734, z: 782.4953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971073622
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +771,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1986943633}
   - component: {fileID: 1986943632}
-  - component: {fileID: 1986943634}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -747,8 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe2bc673d819e444bb70b1dda3cb38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sessionController: {fileID: 1986943634}
-  isGame: 0
+  sessionController: {fileID: 1727862052}
 --- !u!4 &1986943633
 Transform:
   m_ObjectHideFlags: 0
@@ -764,20 +806,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1986943634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986943631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edef9d2af6f79254c942eeacbfa2df2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _VideoScreen_GameManager: {fileID: 1276084362}
-  isGame: 0
 --- !u!1 &2009568783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,4 +1085,5 @@ SceneRoots:
   - {fileID: 1971073625}
   - {fileID: 1276084363}
   - {fileID: 1986943633}
+  - {fileID: 1727862053}
   - {fileID: 2009568787}

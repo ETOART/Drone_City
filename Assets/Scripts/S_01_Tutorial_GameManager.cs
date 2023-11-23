@@ -16,7 +16,8 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
     [SerializeField] private CanvasGroup _blackScreen;
     [SerializeField] private bool transitionInProgress;
     [SerializeField] private string scenename;
-
+    [SerializeField] private AudioSource _buttonPress;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
         {
             Debug.Log("A PRESSED");
             transitionInProgress = true;
-
+            _buttonPress.Play();
             switch (currentSlide)
             {
                 case 1:

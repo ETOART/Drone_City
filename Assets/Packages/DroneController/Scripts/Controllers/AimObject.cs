@@ -19,6 +19,7 @@ public class AimObject : MonoBehaviour
     [SerializeField] private GameObject _player;
 
     [SerializeField] private AudioSource _scanSound;
+   [SerializeField] private AudioSource _wrongScanTarget;
 
   
     
@@ -33,7 +34,7 @@ public class AimObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Camera.main.transform, transform.up);
+        //transform.LookAt(Camera.main.transform, transform.up);
        // ScanObject();
     }
 
@@ -41,7 +42,7 @@ public class AimObject : MonoBehaviour
     public void ScanObject()
     {
         
-        if (readyToCheck && scanObject!=null && !block)
+        if (readyToCheck && scanObject!=null && !block && !scanObject.tag.Equals("done"))
         {
           
                
@@ -62,6 +63,10 @@ public class AimObject : MonoBehaviour
                     
                 }));
             
+        }
+        else
+        {
+            _wrongScanTarget.Play();
         }
         
         
