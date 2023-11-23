@@ -26,7 +26,7 @@ using UnityEngine.Serialization;
 
 
         [SerializeField] private RotateScanArea aimObject;
-        [SerializeField] private AimObject  _aimObjectScaner;
+        [SerializeField] private FocusSphere _aimObjectScaner;
         [SerializeField] private AudioSource _ButtonPress;
         
         

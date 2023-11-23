@@ -99,7 +99,7 @@ public class RotateScanArea : MonoBehaviour
                 Debug.Log("Down Border of screen has reached"); 
             }
 
-            if ( viewPos.y <= 0.5f && value > 0)
+            if ( viewPos.y <= 0.3f && value > 0)
             {
                 Debug.Log("Y:" + viewPos.y);
                 transform.RotateAround(_RCenter.transform.position, Vector3.right, 20 * value * Time.deltaTime);
