@@ -148,7 +148,7 @@ public class GameManager : MonoBehaviour
 
     public void StartScoreLevel()
     {
-        SceneManager.LoadSceneAsync(4);
+        SceneManager.LoadSceneAsync(4 , LoadSceneMode.Additive);
     }
 
     public void ShowScanTargetData(GameObject target)
