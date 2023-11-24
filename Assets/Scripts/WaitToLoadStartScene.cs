@@ -6,10 +6,13 @@ public class WaitToLoadStartScene : MonoBehaviour
 {
     [SerializeField] private CanvasGroup _transitScreen;
     [SerializeField] private float timeToWait = 20f;
+    [SerializeField] private bool startTransitionScreen = true;
     bool start = false;
     void Start()
     {
+        if (startTransitionScreen)
         LeanTween.alphaCanvas(_transitScreen, 0, 1f).setEaseLinear();
+
         StartCoroutine(WaitToLoadScene());
     }
     private void Update()

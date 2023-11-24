@@ -16,6 +16,7 @@ public class IDGenerator
     private static string GenerateID()
     {
         var result = Guid.NewGuid().ToString();
+
         ID = result;
         Debug.Log(result);
         return result;

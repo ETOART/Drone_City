@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2156.9187, g: 4834.0005, b: 8278.47, a: 1}
+  m_IndirectSpecularColor: {r: 2157.201, g: 4834.188, b: 8278.72, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3908,6 +3908,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966042447}
   m_CullTransparentMesh: 1
+--- !u!1 &2002984329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2002984331}
+  - component: {fileID: 2002984330}
+  m_Layer: 0
+  m_Name: WaitToLoadStartScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2002984330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002984329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389560311de7c45428e0be8f614d3606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitScreen: {fileID: 1966042450}
+  timeToWait: 180
+  startTransitionScreen: 0
+--- !u!4 &2002984331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002984329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 153.49994, y: 37.001884, z: 381.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2014615400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e950051707e222c4caf089dfa6bb4468, type: 3}
@@ -4206,3 +4253,4 @@ SceneRoots:
   - {fileID: 298928119}
   - {fileID: 2054392768}
   - {fileID: 1207334579}
+  - {fileID: 2002984331}
