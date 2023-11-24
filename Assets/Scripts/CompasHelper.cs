@@ -35,7 +35,7 @@ public class CompasHelper : MonoBehaviour
 
             _scanTarget = nearObjectTarget;
             Vector3 directionToTarget = nearObjectTarget.transform.position - transform.position;
-            Debug.Log(directionToTarget);
+            //Debug.Log(directionToTarget);
 
             
             

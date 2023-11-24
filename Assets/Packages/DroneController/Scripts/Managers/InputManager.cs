@@ -50,13 +50,13 @@ using UnityEngine.Serialization;
 
         public void Update()
         {
-            
-           
-            
-            
-            
-            aimObject.moveScanAreaLEFTRIGHT(_inputScanAimUPDOWN.action.ReadValue<float>());
-            aimObject.moveScanAreaUPDOWN(_inputScanAimLEFTRIGHT.action.ReadValue<float>());
+
+
+
+
+
+        _aimObjectScaner.moveScanAreaLEFTRIGHT(_inputScanAimLEFTRIGHT.action.ReadValue<float>() );
+        _aimObjectScaner.moveScanAreaUPDOWN(_inputScanAimUPDOWN.action.ReadValue<float>());
             
                 
             

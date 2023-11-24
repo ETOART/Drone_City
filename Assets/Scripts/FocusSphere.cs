@@ -13,13 +13,8 @@ public class FocusSphere : MonoBehaviour
     [SerializeField] private bool readyToCheck;
     [SerializeField] private GameObject scanObject;
 
-
-    [SerializeField] private Material _simple;
-    [SerializeField] private Material _ready;
-    [SerializeField] private MeshRenderer scanerPlane;
     [SerializeField] private GameObject crossObject;
     [SerializeField] private bool block;
-    [SerializeField] private GameObject _player;
 
     [SerializeField] private AudioSource _scanSound;
     [SerializeField] private AudioSource _wrongScanTarget;
@@ -60,7 +55,7 @@ public class FocusSphere : MonoBehaviour
         }
 
         //// Отрисуйте луч для визуализации
-        //Debug.DrawRay(raycastOrigin, raycastDirection * raycastDistance, Color.red);
+        Debug.DrawRay(raycastOrigin, raycastDirection * raycastDistance, Color.red);
 
         if (hitObject != null)
         {
@@ -83,7 +78,7 @@ public class FocusSphere : MonoBehaviour
 
             block = true;
             GameObject cross = Instantiate(crossObject, scanObject.transform);
-            // cross.GetComponent<LookAtConstraint>().AddSource(_pl);
+
             _scanSound.Play();
             GameManager.instance.AddScore();
             GameManager.instance.ShowScanTargetData(scanObject);
@@ -103,6 +98,28 @@ public class FocusSphere : MonoBehaviour
 
 
     }
+
+
+    public void moveScanAreaUPDOWN(float value)
+    {
+        
+        Vector3 anglesNow = transform.localEulerAngles;
+        Debug.Log(anglesNow);
+        if (anglesNow.x < 85 && value > 0)
+            transform.localEulerAngles = new Vector3((anglesNow.x + value), anglesNow.y, anglesNow.z);
+        if (anglesNow.x > 50 && value < 0)
+            transform.localEulerAngles = new Vector3((anglesNow.x + value), anglesNow.y, anglesNow.z);
+    }
+    public void moveScanAreaLEFTRIGHT(float value)
+    {
+        Vector3 anglesNow = transform.localEulerAngles;
+
+        if (anglesNow.y > 170 && value <0)
+            transform.localEulerAngles = new Vector3(anglesNow.x, (anglesNow.y + value), anglesNow.z);
+        if(anglesNow.y < 250 && value > 0)
+            transform.localEulerAngles = new Vector3(anglesNow.x, (anglesNow.y + value), anglesNow.z);
+    }
+
 }
 
 
