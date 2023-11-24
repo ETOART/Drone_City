@@ -34789,7 +34789,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 26.37
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5064637784131013914, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
+    - {fileID: 5064637785581827973, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1995263605679441530, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
     - {fileID: 5064637785109347793, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
@@ -34802,6 +34804,8 @@ PrefabInstance:
     - {fileID: 4556198875816869336, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
     - {fileID: 603568678748873993, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
     - {fileID: 4325967375735816701, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
+    - {fileID: 5064637783545964742, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
+    - {fileID: 481776513360537909, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7269969678909957700, guid: fdd7c654da0d1d844b79945b2abdc09f, type: 3}
       insertIndex: 0
