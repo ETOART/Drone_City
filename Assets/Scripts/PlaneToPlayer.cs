@@ -16,7 +16,7 @@ public class PlaneToPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(central_Camera.transform);
+        transform.LookAt(central_Camera.transform, Vector3.up);
         // ScanObject();
     }
 }
