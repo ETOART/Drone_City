@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1081.4894, g: 1100.6173, b: 1242.4532, a: 1}
+  m_IndirectSpecularColor: {r: 1081.4093, g: 1100.5665, b: 1242.3947, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -592,6 +592,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 163
       objectReference: {fileID: 0}
+    - target: {fileID: 2282087121747725239, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a70a1ac2c2f8c0547a242113fb2471c7, type: 3}
     - target: {fileID: 3234238458540904158, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -688,6 +692,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 376.4
       objectReference: {fileID: 0}
+    - target: {fileID: 5744821531296847151, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744821531296847151, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744821531296847151, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744821531296847151, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5811180264720818324, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -733,6 +753,7 @@ PrefabInstance:
     - {fileID: 5892827077279407892, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4549961197356570777, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
+    - {fileID: 201838763053832581, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 530981774276753594, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}

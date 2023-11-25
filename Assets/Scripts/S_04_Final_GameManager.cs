@@ -12,10 +12,14 @@ public class S_04_Final_GameManager : MonoBehaviour
     [SerializeField] private GameObject scoreListBody;
     [SerializeField] private ShowScoreboard showScoreboard;
 
+    
+
+
     Scoreboard[] resultScoreboard = null;
 
     void  Start()
     {
+        
         TakeScore();
 
     }

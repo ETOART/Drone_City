@@ -14,7 +14,6 @@ public class WaitToLoadStartScene : MonoBehaviour
     }
     private void Update()
     {
-        
         if (start)
         {
             start = false;

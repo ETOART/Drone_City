@@ -19,7 +19,8 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
     [SerializeField] private bool transitionInProgress;
     [SerializeField] private string scenename;
     [SerializeField] private AudioSource _buttonPress;
-    
+
+    private bool dronShow = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,12 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
             Debug.Log("A PRESSED");
             transitionInProgress = true;
             _buttonPress.Play();
+
+            if(dronShow)
+            {
+                HideDrontWithInput();
+                return;
+            }
             switch (currentSlide)
             {
                 case 1:
@@ -44,6 +51,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
                     ShowDroneWithInput();
                 }
                     break;
+
                 case 3:
                 {
                     GameReady();
@@ -73,17 +81,25 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
     {
         LeanTween.alphaCanvas(slides[currentSlide], 0, 1f).setEaseLinear().setOnComplete((() =>
         {
+            dronShow = true;
+            allowInput = true;
+            transitionInProgress = false;
+            
+            LeanTween.alphaCanvas(_blackScreen, 0, 1f).setEaseLinear();
+        }));
+    }
+
+    public void HideDrontWithInput()
+    {
+        dronShow = false;
+        LeanTween.alphaCanvas(_blackScreen, 1, 1f).setEaseLinear().setOnComplete((() =>
+        {
             currentSlide += 1;
-            LeanTween.alphaCanvas(_blackScreen, 0, 1f).setEaseLinear().setOnComplete((() =>
+            LeanTween.alphaCanvas(slides[currentSlide], 1, 1f).setEaseLinear().setOnComplete((() =>
             {
-                LeanTween.alphaCanvas(_blackScreen, 1, 1f).setDelay(5).setEaseLinear().setOnComplete((() =>
-                {
-                    LeanTween.alphaCanvas(slides[currentSlide], 1, 1f).setEaseLinear().setOnComplete((() =>
-                    {
-                        allowInput = true;
-                        transitionInProgress = false;
-                    }));
-                }));
+
+                allowInput = true;
+                transitionInProgress = false;
             }));
         }));
     }

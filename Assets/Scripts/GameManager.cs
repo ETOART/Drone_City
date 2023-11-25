@@ -112,7 +112,7 @@ public class GameManager : MonoBehaviour
 
     public void DisplayProgress()
     {
-        loadingImage.fillAmount -= 1.0f / 180 * Time.deltaTime;
+        loadingImage.fillAmount -= 1.0f / 300 * Time.deltaTime;
     }
 
     public void AddScore()
