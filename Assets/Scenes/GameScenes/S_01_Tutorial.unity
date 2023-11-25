@@ -157,6 +157,7 @@ MonoBehaviour:
   - {fileID: 1580324802}
   - {fileID: 744881847}
   - {fileID: 1122133100}
+  _inputXAction: {fileID: 2061177155098438026, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}
   _inputScanAimAction: {fileID: 8650832291769308577, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}
   allowInput: 0
   currentSlide: 0
@@ -1113,7 +1114,7 @@ PrefabInstance:
     - target: {fileID: 8764590359853934738, guid: c779f2618148d8841af6c95b87911640, type: 3}
       propertyPath: _aimObjectScaner
       value: 
-      objectReference: {fileID: 298928117}
+      objectReference: {fileID: 0}
     - target: {fileID: 8764590359853934738, guid: c779f2618148d8841af6c95b87911640, type: 3}
       propertyPath: _inputScanAimAction
       value: 

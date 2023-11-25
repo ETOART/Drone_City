@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class S_01_Tutorial_GameManager : MonoBehaviour
 {
     [SerializeField] private List<CanvasGroup> slides;
+    [SerializeField] private InputActionReference _inputXAction = default;
     [SerializeField] private InputActionReference _inputScanAimAction = default;
 
     [SerializeField] private bool allowInput;
@@ -53,6 +54,10 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
                 }
                     break;
             }
+        }
+        if(_inputXAction.action.ReadValue<float>() != 0 && allowInput && !transitionInProgress)
+        {
+            StartGame();
         }
     }
 

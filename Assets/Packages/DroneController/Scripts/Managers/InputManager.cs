@@ -18,8 +18,9 @@ using UnityEngine.Serialization;
         [SerializeField] private InputActionReference _inputScanAimUPDOWN = default;
         [SerializeField] private InputActionReference _inputScanAimLEFTRIGHT = default;
         [SerializeField] private InputActionReference _inputScanAimAction= default;
+    
 
-        [SerializeField] private float _pitchInput = default;
+    [SerializeField] private float _pitchInput = default;
         [SerializeField] private float _rollInput = default;
         [SerializeField] private float _yawInput = default;
         [SerializeField] private float _throttleInput = default;
