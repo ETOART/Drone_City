@@ -36,17 +36,21 @@ public class FocusSphere : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(raycastOrigin, raycastDirection, out hit, raycastDistance))
         {
-            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Object"))
+            if (hit.collider.gameObject.CompareTag("target"))
             {
                 hitObject = hit.transform;
-                if (hitObject.CompareTag("done")) return;
+      
 
                 scanObject = hitObject.gameObject;
                 readyToCheck = true;
                 ChangeColor(hoverColor);
 
             }
-            
+            else
+            {
+                ChangeColor(mainColor);
+                hitObject = null;
+            }
         }
         else
         {
@@ -104,7 +108,7 @@ public class FocusSphere : MonoBehaviour
     {
         
         Vector3 anglesNow = transform.localEulerAngles;
-        Debug.Log(anglesNow);
+        //Debug.Log(anglesNow);
         if (anglesNow.x < 85 && value > 0)
             transform.localEulerAngles = new Vector3((anglesNow.x + value), anglesNow.y, anglesNow.z);
         if (anglesNow.x > 50 && value < 0)
