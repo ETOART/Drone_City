@@ -54,9 +54,11 @@ using UnityEngine.Serialization;
 
 
 
-
-        _aimObjectScaner.moveScanAreaLEFTRIGHT(_inputScanAimLEFTRIGHT.action.ReadValue<float>() );
-        _aimObjectScaner.moveScanAreaUPDOWN(_inputScanAimUPDOWN.action.ReadValue<float>());
+        if(_aimObjectScaner != null) {
+            _aimObjectScaner.moveScanAreaLEFTRIGHT(_inputScanAimLEFTRIGHT.action.ReadValue<float>());
+            _aimObjectScaner.moveScanAreaUPDOWN(_inputScanAimUPDOWN.action.ReadValue<float>());
+        }
+        
             
                 
             

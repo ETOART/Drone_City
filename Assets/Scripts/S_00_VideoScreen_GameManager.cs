@@ -22,11 +22,11 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         {
             StartGame();
         }
-       // if (start)
-       // {
-       //     StartGame();
-       //     start = false;
-       // }
+        if (start)
+        {
+            StartGame();
+            start = false;
+        }
 
     }
 

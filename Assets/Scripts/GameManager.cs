@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
         httpRequest.SendScore(score);
 
         Camera.GetComponent<CameraMovement>().enabled = false;
-        LeanTween.alphaCanvas(_mainUI, 0, 2f).setDelay(2f).setEaseLinear();
+        LeanTween.alphaCanvas(_mainUI, 0, 2f).setDelay(0.1f).setEaseLinear();
         _inputManager.OnDisable();
         
         
@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
         if (!gameStart)
         {
             gameStart = true;
-            SceneManager.LoadSceneAsync(4 , LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(4);
         }
         
     }
