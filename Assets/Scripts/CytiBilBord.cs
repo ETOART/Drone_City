@@ -18,7 +18,7 @@ public class CytiBilBord : MonoBehaviour
     {
         float camDist = camera.position.z - transform.position.z;
         float cityDist = city.position.z - transform.position.z;
-        Debug.Log("cityDist:  "+ cityDist);
+        //Debug.Log("cityDist:  "+ cityDist);
         if (cityDist > treshholdCityDist) return;
         transform.position -= new Vector3(0, 0, camDistRef - camDist);
     }

@@ -48,18 +48,20 @@ public class FocusSphere : MonoBehaviour
             }
             else
             {
+                scanObject = null;
                 ChangeColor(mainColor);
                 hitObject = null;
             }
         }
         else
         {
+            scanObject = null;
             ChangeColor(mainColor);
             hitObject = null;
         }
 
         //// Отрисуйте луч для визуализации
-        Debug.DrawRay(raycastOrigin, raycastDirection * raycastDistance, Color.red);
+        Debug.DrawRay(raycastOrigin, raycastDirection * raycastDistance, Color.green);
 
         if (hitObject != null)
         {
@@ -77,22 +79,21 @@ public class FocusSphere : MonoBehaviour
 
         if (readyToCheck && scanObject != null && !block && !scanObject.tag.Equals("done"))
         {
+            GameObject signObj = scanObject.transform.GetChild(0).gameObject;
+            signObj.GetComponent<Renderer>().material.SetColor("_EmissiveColor", Color.green);
+            signObj.GetComponent<Renderer>().material.SetColor("_BaseColor", Color.green);
 
             scanObject.tag = "done";
+            
 
             block = true;
-            GameObject cross = Instantiate(crossObject, scanObject.transform);
+            //GameObject cross = Instantiate(crossObject, scanObject.transform);
 
             _scanSound.Play();
             GameManager.instance.AddScore();
             GameManager.instance.ShowScanTargetData(scanObject);
-
-            LeanTween.moveY(cross, cross.transform.position.y + 25, 3).setEaseOutCirc().setOnComplete((o =>
-            {
-                //Destroy(cross);
-                block = false;
-
-            }));
+            block = false;
+            
 
         }
         else

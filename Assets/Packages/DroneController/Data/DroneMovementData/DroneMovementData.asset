@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaximumPitchSpeed: 15
   MaximumRollSpeed: 10
-  MaximumYawSpeed: 3
+  MaximumYawSpeed: 1
   IdleUpForce: 98.10001
   ForwardMovementForce: 1200
   SidewardMovementForce: 400
