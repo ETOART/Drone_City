@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -172,7 +172,8 @@ public class DroneSelect : MonoBehaviour
             
         elements[currentIndex].GetComponentInChildren<Animator>().SetBool("DroneFly",true);
         LeanTween.alphaCanvas(_blackScreen, 1, 2f).setDelay(2f).setEaseLinear();
-        StartGameLevel();
+        StartCoroutine(WaitToStart());
+        
     }
 
 
@@ -187,6 +188,12 @@ public class DroneSelect : MonoBehaviour
         
        
     }
-    
-    
+    IEnumerator WaitToStart()
+    {
+        yield return new WaitForSeconds(3f); // Ожидание 1 секунды
+
+        StartGameLevel();
+    }
+
+
 }

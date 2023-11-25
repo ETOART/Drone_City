@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,6 +20,10 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
     [SerializeField] private bool transitionInProgress;
     [SerializeField] private string scenename;
     [SerializeField] private AudioSource _buttonPress;
+
+
+    [SerializeField] private AudioMixer audioMixer; // Ссылка на аудио микшер
+    [SerializeField] private string dronGroupToMute = "Dron";
 
     private bool dronShow = false;
 
@@ -79,6 +84,8 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
 
     public void ShowDroneWithInput()
     {
+        
+        audioMixer.SetFloat(dronGroupToMute, 1f);
         LeanTween.alphaCanvas(slides[currentSlide], 0, 1f).setEaseLinear().setOnComplete((() =>
         {
             dronShow = true;
@@ -91,6 +98,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
 
     public void HideDrontWithInput()
     {
+        audioMixer.SetFloat(dronGroupToMute, -80f);
         dronShow = false;
         LeanTween.alphaCanvas(_blackScreen, 1, 1f).setEaseLinear().setOnComplete((() =>
         {

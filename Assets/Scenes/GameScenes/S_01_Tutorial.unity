@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2156.858, g: 4833.9067, b: 8278.407, a: 1}
+  m_IndirectSpecularColor: {r: 2157.201, g: 4834.188, b: 8278.72, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -166,6 +166,8 @@ MonoBehaviour:
   transitionInProgress: 0
   scenename: S_02_DroneSelect
   _buttonPress: {fileID: 1207334580}
+  audioMixer: {fileID: 24100000, guid: f49ba5ec3a276cb499c41cca19d96d18, type: 2}
+  dronGroupToMute: Dron
 --- !u!4 &15247621
 Transform:
   m_ObjectHideFlags: 0
@@ -1782,10 +1784,10 @@ AudioSource:
   m_GameObject: {fileID: 1080283391}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c74658aca960ce4da28f5d0cc1cc8bd, type: 3}
+  OutputAudioMixerGroup: {fileID: -554285084645162714, guid: f49ba5ec3a276cb499c41cca19d96d18, type: 2}
+  m_audioClip: {fileID: 8300000, guid: ffa56e7618af4c14b87bdff57dc2613d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.146
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2132,6 +2134,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 52123342581488795, guid: 8c4c3528c0030914da812bafaffe3459, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 5574395625214191391, guid: f49ba5ec3a276cb499c41cca19d96d18, type: 2}
     - target: {fileID: 877378908629645290, guid: 8c4c3528c0030914da812bafaffe3459, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.4391503
@@ -2342,7 +2348,7 @@ AudioSource:
   m_GameObject: {fileID: 1339341064}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6137964440500691654, guid: f49ba5ec3a276cb499c41cca19d96d18, type: 2}
   m_audioClip: {fileID: 8300000, guid: fc50c0f4ed740fd438042d703bef0c5b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2794,7 +2800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 1339341066}
-  _volume: 0.1
+  _volume: 1
   _volumeVelocityMultiplier: 0.005
   _pitch: 1
   _pitchVelocityMultiplier: 0.0035

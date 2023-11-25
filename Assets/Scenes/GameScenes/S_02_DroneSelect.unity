@@ -708,7 +708,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: S_02_AudioManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6736075912185236061, guid: f91cf1a9f13041044a3480b52fe8c4b7, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 4751375098477683238, guid: 3251b371ef21ea94db671c97aa7393cc, type: 2}
+    m_RemovedComponents:
+    - {fileID: 3288532003544659801, guid: f91cf1a9f13041044a3480b52fe8c4b7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -735,8 +740,8 @@ AudioSource:
   m_GameObject: {fileID: 772416494}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c74658aca960ce4da28f5d0cc1cc8bd, type: 3}
+  OutputAudioMixerGroup: {fileID: 4691192944530522894, guid: 3251b371ef21ea94db671c97aa7393cc, type: 2}
+  m_audioClip: {fileID: 8300000, guid: ffa56e7618af4c14b87bdff57dc2613d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2119,7 +2124,7 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
