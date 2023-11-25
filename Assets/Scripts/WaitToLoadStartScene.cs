@@ -4,24 +4,32 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class WaitToLoadStartScene : MonoBehaviour
 {
+    [SerializeField] private CanvasGroup _transitScreen;
+    [SerializeField] private float timeToWait = 20f;
     bool start = false;
     void Start()
     {
+        LeanTween.alphaCanvas(_transitScreen, 0, 1f).setEaseLinear();
         StartCoroutine(WaitToLoadScene());
     }
     private void Update()
     {
+        
         if (start)
         {
             start = false;
-            SceneManager.LoadSceneAsync("S_00_VideoScreen");
+            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(RestartGame); 
         }
     }
 
-
+    private void RestartGame()
+    {
+        SceneManager.LoadSceneAsync("S_00_VideoScreen");
+    }
+    
     IEnumerator WaitToLoadScene()
     {
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(timeToWait);
         start = true;
 
     }

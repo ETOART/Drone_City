@@ -15,6 +15,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
 
     [SerializeField] private int currentSlide;
     [SerializeField] private CanvasGroup _blackScreen;
+    [SerializeField] private CanvasGroup _transitScreen;
     [SerializeField] private bool transitionInProgress;
     [SerializeField] private string scenename;
     [SerializeField] private AudioSource _buttonPress;
@@ -25,6 +26,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
     {
         LeanTween.alphaCanvas(slides[0], 1, 2f).setDelay(2f).setEaseLinear()
             .setOnComplete((() => { allowInput = true; }));
+        LeanTween.alphaCanvas(_transitScreen, 0, 1f).setEaseLinear();
     }
 
     // Update is called once per frame
@@ -57,7 +59,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
         }
         if(_inputXAction.action.ReadValue<float>() != 0 && allowInput && !transitionInProgress)
         {
-            StartGame();
+            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame); 
         }
     }
 
@@ -106,7 +108,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
         {
             gameStarted = true;
             Debug.Log("sceneName to load: " + scenename);
-            SceneManager.LoadScene(scenename);
+            SceneManager.LoadSceneAsync(scenename);
         }
 
     }

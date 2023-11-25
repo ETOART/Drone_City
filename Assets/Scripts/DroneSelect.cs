@@ -50,11 +50,13 @@ public class DroneSelect : MonoBehaviour
     [SerializeField] private InputActionReference _inputScanAimLEFTRIGHT = default;
     
     [SerializeField] private InputActionReference _inputScanAimAction= default;
-    
+
+    [SerializeField] private CanvasGroup _transitScreen;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        LeanTween.alphaCanvas(_transitScreen, 0, 1f).setEaseLinear();
         currentIndex = 0;
         
     }

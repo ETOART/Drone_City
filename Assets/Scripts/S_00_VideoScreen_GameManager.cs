@@ -11,21 +11,25 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
     private bool start = false;
     [SerializeField] private ServerStart serverStart;
     [SerializeField] private SessionController sessionController;
+
+    [SerializeField] private CanvasGroup _transitScreen;
     private void Start()
     {
         sessionController.isGame = false;
+        LeanTween.alphaCanvas(_transitScreen, 0, 1f).setEaseLinear();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartGame();
+            start = false;
+            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame);
         }
         if (start)
         {
-            StartGame();
             start = false;
+            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame);  
         }
 
     }

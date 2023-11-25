@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        LeanTween.alphaCanvas(_blackScreen, 0, 3f).setEaseLinear();
         // Starts the timer automatically
         timerIsRunning = true;
         instance = this;
@@ -132,7 +133,7 @@ public class GameManager : MonoBehaviour
         httpRequest.SendScore(score);
 
         Camera.GetComponent<CameraMovement>().enabled = false;
-        LeanTween.alphaCanvas(_mainUI, 0, 2f).setDelay(0.1f).setEaseLinear();
+        LeanTween.alphaCanvas(_mainUI, 0, 1f).setDelay(0.1f).setEaseLinear();
         _inputManager.OnDisable();
         
         
