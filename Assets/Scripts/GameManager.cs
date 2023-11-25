@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float loadingProgress;
 
     [SerializeField] private TextMeshProUGUI scoreToAdd;
+    [SerializeField] private TextMeshProUGUI nameToAdd;
     [SerializeField] private  TextMeshProUGUI textToAdd;
     [SerializeField] private CanvasGroup targetScanAreaUI;
     [SerializeField] private CanvasGroup _UIgroup;
@@ -115,9 +116,9 @@ public class GameManager : MonoBehaviour
         loadingImage.fillAmount -= 1.0f / 180 * Time.deltaTime;
     }
 
-    public void AddScore()
+    public void AddScore(int a)
     {
-        score += 1;
+        score += a;
         _scoreUI.text = "" + score;
         
     }
@@ -164,7 +165,8 @@ public class GameManager : MonoBehaviour
         if (scanTarget != null)
         {
             scoreToAdd.text = "+"+ scanTarget.scoreToAdd;
-            scoreToAdd.text = scanTarget.name;  
+            nameToAdd.text = scanTarget.name;
+            AddScore(scanTarget.scoreToAdd);
         }
 
         LeanTween.alphaCanvas(targetScanAreaUI, 1, 1f).setEaseLinear();

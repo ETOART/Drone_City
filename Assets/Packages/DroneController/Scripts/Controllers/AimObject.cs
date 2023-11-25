@@ -53,7 +53,7 @@ public class AimObject : MonoBehaviour
                 // cross.GetComponent<LookAtConstraint>().AddSource(_pl);
 
                 _scanSound.Play();
-                GameManager.instance.AddScore();
+                //GameManager.instance.AddScore();
                 GameManager.instance.ShowScanTargetData(scanObject);
                
                 LeanTween.moveY(cross, cross.transform.position.y + 25, 3).setEaseOutCirc().setOnComplete((o =>

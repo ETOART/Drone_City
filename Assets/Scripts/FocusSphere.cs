@@ -90,7 +90,7 @@ public class FocusSphere : MonoBehaviour
             //GameObject cross = Instantiate(crossObject, scanObject.transform);
 
             _scanSound.Play();
-            GameManager.instance.AddScore();
+  
             GameManager.instance.ShowScanTargetData(scanObject);
             block = false;
             
