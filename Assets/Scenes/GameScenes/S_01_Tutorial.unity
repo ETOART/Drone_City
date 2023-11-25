@@ -3938,7 +3938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitScreen: {fileID: 1966042450}
-  timeToWait: 180
+  timeToWait: 500
   startTransitionScreen: 0
 --- !u!4 &2002984331
 Transform:

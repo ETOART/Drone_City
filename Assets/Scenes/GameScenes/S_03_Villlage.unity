@@ -3557,8 +3557,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 14352128
-  m_fontColor: {r: 0, g: 1, b: 0.85423136, a: 0}
+    rgba: 4292542208
+  m_fontColor: {r: 0, g: 1, b: 0.85423136, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9523,7 +9523,7 @@ MonoBehaviour:
   score: 0
   loadingImage: {fileID: 109082722}
   loadingProgress: 0
-  scoreToAdd: {fileID: 1548884881}
+  scoreToAdd: {fileID: 888719254}
   nameToAdd: {fileID: 1548884881}
   textToAdd: {fileID: 888719254}
   targetScanAreaUI: {fileID: 745007309}
