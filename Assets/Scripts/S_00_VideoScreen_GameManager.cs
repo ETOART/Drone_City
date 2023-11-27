@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.InputSystem;
 
 public class S_00_VideoScreen_GameManager : MonoBehaviour
 {
@@ -12,7 +13,11 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
     [SerializeField] private ServerStart serverStart;
     [SerializeField] private SessionController sessionController;
 
+    [SerializeField] private InputActionReference _inputXAction = default;
+
     [SerializeField] private CanvasGroup _transitScreen;
+
+    private bool oneShotmethod = true;
     private void Start()
     {
         sessionController.isGame = false;
@@ -21,11 +26,10 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (_inputXAction.action.ReadValue<float>() != 0 && oneShotmethod)
         {
-            start = false;
-            SessionController.gameIsRegister = false;
-            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame);
+            oneShotmethod = false;
+            start = true;
         }
         if (start)
         {
