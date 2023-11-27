@@ -16,7 +16,7 @@ public class AudioManager_Village : MonoBehaviour
     {
         
         float camDist = camera.position.z - city.position.z;
-        Debug.Log(camDist);
+        //Debug.Log(camDist);
         if (camDist < tresholdCityDist && !state)
         {
             state = true;

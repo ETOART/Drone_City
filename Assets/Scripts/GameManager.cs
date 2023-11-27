@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game over");
         Debug.Log("Score : " + score);
 
-
+        if(SessionController.gameIsRegister)
         httpRequest.SendScore(score);
 
         Camera.GetComponent<CameraMovement>().enabled = false;

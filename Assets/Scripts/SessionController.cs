@@ -8,7 +8,7 @@ public class SessionController : MonoBehaviour
     public bool isGame = false;
 
     public static SessionController Instance;
-
+    public static bool gameIsRegister = false;
     private void Awake()
     {
         if (SessionController.Instance != null && SessionController.Instance != this)

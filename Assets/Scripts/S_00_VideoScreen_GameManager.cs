@@ -24,11 +24,13 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             start = false;
+            SessionController.gameIsRegister = false;
             LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame);
         }
         if (start)
         {
             start = false;
+            SessionController.gameIsRegister = true;
             LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame);  
         }
 
@@ -39,7 +41,7 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         if (!start)
         {
             start = true;
-            Debug.Log("sceneName to load: " + scenename);
+            //Debug.Log("sceneName to load: " + scenename);
             sessionController.isGame = true;
             SceneManager.LoadSceneAsync(scenename);
         }
