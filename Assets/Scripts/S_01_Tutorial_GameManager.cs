@@ -70,7 +70,7 @@ public class S_01_Tutorial_GameManager : MonoBehaviour
                     break;
             }
         }
-        if(_inputXAction.action.ReadValue<float>() != 0 && allowInput && !transitionInProgress)
+        if((Input.GetKeyDown(KeyCode.Space) || _inputXAction.action.ReadValue<float>() != 0) && allowInput && !transitionInProgress)
         {
             LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame); 
         }

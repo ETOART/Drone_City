@@ -26,7 +26,7 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 
     void Update()
     {
-        if (_inputXAction.action.ReadValue<float>() != 0 && oneShotmethod)
+        if ((Input.GetKeyDown(KeyCode.Space) || _inputXAction.action.ReadValue<float>() != 0) && oneShotmethod )
         {
             oneShotmethod = false;
             start = true;
