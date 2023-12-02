@@ -30,7 +30,7 @@ public class SessionController : MonoBehaviour
             Debug.Log("Game is already start");
             return null;
         }
-        _VideoScreen_GameManager.StartGame();
+        _VideoScreen_GameManager.start = true;
         string ID = IDGenerator.TakeNewID();
         Debug.Log("Generate new ID: " + ID);
         return ID;

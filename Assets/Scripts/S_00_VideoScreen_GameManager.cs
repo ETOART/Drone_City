@@ -9,7 +9,7 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 {
 
     [SerializeField] private string scenename = "S_02_DroneSelect";
-    private bool start = false;
+    public bool start = false;
     [SerializeField] private ServerStart serverStart;
     [SerializeField] private SessionController sessionController;
 
@@ -29,26 +29,23 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Space) || _inputXAction.action.ReadValue<float>() != 0) && oneShotmethod )
         {
             oneShotmethod = false;
-            start = true;
+            SessionController.gameIsRegister = false;
+            sessionController.isGame = true;
+            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(LoadScene);
         }
         if (start)
         {
             start = false;
             SessionController.gameIsRegister = true;
-            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(StartGame);  
+            sessionController.isGame = true;
+            LeanTween.alphaCanvas(_transitScreen, 1, 1f).setDelay(0.1f).setEaseLinear().setOnComplete(LoadScene);  
         }
 
     }
 
-    public void StartGame()
+    private void LoadScene()
     {
-        if (!start)
-        {
-            start = true;
-            //Debug.Log("sceneName to load: " + scenename);
-            sessionController.isGame = true;
-            SceneManager.LoadSceneAsync(scenename);
-        }
+        SceneManager.LoadSceneAsync(scenename);
     }
    
 

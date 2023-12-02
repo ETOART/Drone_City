@@ -10,6 +10,9 @@ public class IDGenerator
     }
     public static string TakeID()
     {
+        if(ID == "")
+        return GenerateID();
+
         return ID;
     }
 
