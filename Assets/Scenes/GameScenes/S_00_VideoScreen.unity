@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 59304015}
   - component: {fileID: 59304014}
   - component: {fileID: 59304017}
+  - component: {fileID: 59304018}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -256,6 +257,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
+--- !u!225 &59304018
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59304012}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &712930674
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,10 +536,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenename: S_01_Tutorial
+  start: 0
   serverStart: {fileID: 1986943632}
   sessionController: {fileID: 1727862052}
-  _inputXAction: {fileID: 8650832291769308577, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}
+  _inputXAction: {fileID: 2061177155098438026, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}
+  _inputAAction: {fileID: 8650832291769308577, guid: fcd38c38c633e3142afbe2983c9ce5a2, type: 3}
   _transitScreen: {fileID: 1808090579}
+  videoPlayer: {fileID: 59304014}
+  clips:
+  - {fileID: 32900000, guid: 543ebcb7cd78bbb40b6cc6d46d44d75f, type: 3}
+  - {fileID: 32900000, guid: 275f9336f03bbf84698b6592e5a352b9, type: 3}
 --- !u!4 &1276084363
 Transform:
   m_ObjectHideFlags: 0
@@ -816,7 +835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!225 &1808090579
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1058,7 +1077,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 0
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
