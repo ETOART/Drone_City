@@ -77,15 +77,21 @@ public class S_00_VideoScreen_GameManager : MonoBehaviour
 
     private void ShowNextVideo(VideoClip clip)
     {
+        LeanTween.value(transform.gameObject, 1, 0, 1f).setOnUpdate(SetVideoVolume);
         LeanTween.alphaCanvas(playerAlpha, 0, 1f).setEaseLinear().setOnComplete((() =>
         {
             videoPlayer.clip = clip;
             videoPlayer.Play();
             LeanTween.alphaCanvas(playerAlpha, 1, 1.5f).setDelay(0.5f).setEaseLinear();
+            LeanTween.value(transform.gameObject, 0, 1, 1f).setOnUpdate(SetVideoVolume);
 
         }));
 
 
+    }
+    private void SetVideoVolume(float vol)
+    {
+        videoPlayer.SetDirectAudioVolume(0, vol);
     }
     public void loopPointReached(VideoPlayer source){
         if (waitToChangeClip)
