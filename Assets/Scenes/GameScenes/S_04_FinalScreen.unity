@@ -314,6 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitScreen: {fileID: 760492773}
   timeToWait: 20
+  startTransitionScreen: 1
 --- !u!1 &760492772
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +724,7 @@ PrefabInstance:
     - target: {fileID: 2282087121747725239, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a70a1ac2c2f8c0547a242113fb2471c7, type: 3}
+      objectReference: {fileID: 21300000, guid: 3227f3af7dfeb814bbeac2831139c066, type: 3}
     - target: {fileID: 3234238458540904158, guid: fe2be4c92f819c249bf09d6f399a0844, type: 3}
       propertyPath: m_Pivot.x
       value: 0
