@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     #region Score
 
     [SerializeField] private TextMeshProUGUI _scoreUI;
+    [SerializeField] private TextMeshProUGUI _scoreUI_sec;
     [SerializeField] private int score;
     #endregion
 
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
 
 
     [SerializeField] private CanvasGroup _mainUI;
+    [SerializeField] private CanvasGroup _OverUI;
     [SerializeField] private InputManager _inputManager;
     [SerializeField] private GameObject _droneContainer;
 
@@ -120,7 +122,9 @@ public class GameManager : MonoBehaviour
     {
         score += a;
         _scoreUI.text = "" + score;
-        
+        _scoreUI_sec.text = "" + score;
+
+
     }
 
 
@@ -135,6 +139,7 @@ public class GameManager : MonoBehaviour
 
         Camera.GetComponent<CameraMovement>().enabled = false;
         LeanTween.alphaCanvas(_mainUI, 0, 1f).setDelay(0.1f).setEaseLinear();
+        LeanTween.alphaCanvas(_OverUI, 1, 1f).setDelay(0.1f).setEaseLinear(); 
         _inputManager.OnDisable();
         
         
@@ -154,7 +159,7 @@ public class GameManager : MonoBehaviour
         if (!gameStart)
         {
             gameStart = true;
-            SceneManager.LoadSceneAsync(4);
+            SceneManager.LoadSceneAsync(0);
         }
         
     }
